@@ -109,7 +109,7 @@ main {
     margin-bottom: var(--spacing-md);
   }
   .downloaded-link {
-    font-size: 10px;
+    font-size: 13px;
   }
   .content-wrapper {
     flex-direction: column;
@@ -125,21 +125,6 @@ main {
   }
   .image-container img {
     height: 300px;
-  }
-}
-
-@media (max-width: 480px) {
-  :root {
-    --font-size-title: 1.8em;
-    --spacing-md: 16px;
-    --spacing-lg: 32px;
-  }
-  main {
-    padding: var(--spacing-sm);
-  }
-  .downloaded-link {
-    font-size: 0.9em;
-    padding: var(--spacing-xs) var(--spacing-sm);
   }
 }
 
