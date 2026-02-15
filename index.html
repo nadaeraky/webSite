@@ -1,0 +1,1272 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./assets/image/logo.jpeg" />
+    <title>المعهد العالي للهندسة والتكنولوجيا - نيو دمياط</title>
+    <link rel="stylesheet" href="assets/CSS/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- Popup Modal -->
+    <div id="certificatePopup" class="popup-overlay">
+      <div class="popup-content">
+        <button class="popup-close" onclick="closePopup()">&times;</button>
+        <div class="popup-body">
+          <h2 class="popup-title">
+            الأعتماد المؤسسي من الهيئة القومية لضمان جودة التعليم والاعتماد
+          </h2>
+          <div class="popup-image">
+            <img
+              src="./assets/image/شهادة الأعتماد.jpeg"
+              alt="شهادة الاعتماد"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+      <div class="header-top">
+        <div class="container">
+          <div class="header-top-content">
+            <div class="contact-info">
+              <a href="tel:0572413235" class="contact-link">
+                <i class="fas fa-phone"></i>
+                <span>057-2413235</span>
+              </a>
+
+              <a href="mailto:contact@ndeti.edu.eg" class="contact-link">
+                <i class="fas fa-envelope"></i>
+                <span>contact@ndeti.edu.eg</span>
+              </a>
+            </div>
+
+            <div class="social-links">
+              <a
+                href="https://www.facebook.com/share/18CsPf6vMg/"
+                aria-label="فيسبوك"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="http://3.217.6.68/?redirect=0" aria-label="جوجل">
+                <i class="fas fa-laptop-code"></i>
+              </a>
+              <a href="mailto:contact@ndeti.edu.eg" aria-label=" جيميل">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-main">
+        <div class="container">
+          <div class="nav-wrapper">
+            <div class="logo">
+              <a href="index.html" aria-label="العودة للصفحة الرئيسية">
+                <img src="./assets/image/ndeti-logo.png" alt="شعار المعهد" />
+                <div class="logo-text">
+                  <span class="logo-main">المعهد العالي للهندسة</span>
+                  <span class="logo-sub">والتكنولوجيا بدمياط الجديدة</span>
+                </div>
+              </a>
+            </div>
+
+            <nav class="nav-desktop" aria-label="قائمة التصفح الرئيسية">
+              <ul class="main-menu" role="menu">
+                <li role="menuitem" class="active">
+                  <a href="./index.html"> الرئيسية </a>
+                </li>
+
+                <li class="dropdown" role="menuitem">
+                  <a href="#" aria-expanded="false" aria-haspopup="true">
+                    عن المعهد
+                    <i class="fas fa-chevron-down dropdown-icon"></i>
+                  </a>
+                  <ul class="dropdown-content" role="menu">
+                    <li role="menuitem">
+                      <a href="./aboutInstitute/structureModel.html">
+                        الهيكل التنظيمي
+                      </a>
+                    </li>
+                    <li role="menuitem">
+                      <a href="./aboutInstitute/leader.html"> عميد المعهد </a>
+                    </li>
+                    <li role="menuitem">
+                      <a href="./aboutInstitute/listOfStuts.html">
+                        رسالة و رؤية المعهد
+                      </a>
+                    </li>
+                    <li role="menuitem">
+                      <a href="./aboutInstitute/rateOfStatus.html">
+                        تقييم المعهد
+                      </a>
+                    </li>
+
+                    <li role="menuitem">
+                      <a href="./aboutInstitute/selfStudy.html">
+                        الدراسة الذاتية والخطة الأستراتيجية
+                      </a>
+                    </li>
+
+                    <li role="menuitem">
+                      <a href="./aboutInstitute/systemStydy.html">
+                        نظام الدراسة
+                      </a>
+                    </li>
+
+                    <li role="menuitem">
+                      <a href="./aboutInstitute/studentDirection.html">
+                        قواعد توزيع الطلاب علي التخصصات
+                      </a>
+                    </li>
+
+                    <li role="menuitem">
+                      <a href="./aboutInstitute/functional.html">
+                        قرار المعادلة
+                      </a>
+                    </li>
+
+                    <li role="menuitem">
+                      <a href="./aboutInstitute/groups.html">
+                        أجتماعات وفعاليات
+                      </a>
+                    </li>
+
+                    <li role="menuitem">
+                      <a href="./aboutInstitute/jops.html"> أعلان وظائف </a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="dropdown" role="menuitem">
+                  <a href="#" aria-expanded="false" aria-haspopup="true">
+                    الأقسام العلمية
+                    <i class="fas fa-chevron-down dropdown-icon"></i>
+                  </a>
+                  <ul class="dropdown-content" role="menu">
+                    <li role="menuitem">
+                      <a href="./sections/baisicScience.html">
+                        قسم العلوم الأساسية
+                      </a>
+                    </li>
+                    <li role="menuitem">
+                      <a href="./sections/engineerSection.html">
+                        قسم الهندسة المدنية
+                      </a>
+                    </li>
+                    <li role="menuitem">
+                      <a href="./sections/chimecalSection.html">
+                        قسم الهندسة الكيميائية
+                      </a>
+                    </li>
+                    <li role="menuitem">
+                      <a href="./sections/electronicSection.html">
+                        قسم هندسة الإتصالات والإلكترونيات
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="dropdown" role="menuitem">
+                  <a href="#" aria-expanded="false" aria-haspopup="true">
+                    شئون الطلاب
+                    <i class="fas fa-chevron-down dropdown-icon"></i>
+                  </a>
+                  <ul class="dropdown-content" role="menu">
+                    <li role="menuitem">
+                      <a href="./studentCare/studentCare.html">
+                        الإرشاد الأكاديمي والريادة العلمية
+                      </a>
+                    </li>
+                    <li role="menuitem">
+                      <a href="./studentCare/enrollAcademic.html">
+                        التسجيل الأكاديمي
+                      </a>
+                    </li>
+                    <li role="menuitem">
+                      <a href="./studentCare/supportAcademic.html">
+                        الدعم الأكاديمي
+                      </a>
+                    </li>
+
+                    <li role="menuitem">
+                      <a href="./studentCare/studentTraining.html">
+                        تدريبات الطلاب
+                      </a>
+                    </li>
+
+                    <li role="menuitem">
+                      <a href="./studentCare/examDictionary.html">
+                        شئون الدراسة والأمتحانات
+                      </a>
+                    </li>
+
+                    <li role="menuitem">
+                      <a href="./studentCare/resultOfStudent.html">
+                        نتائج الطلاب
+                      </a>
+                    </li>
+
+                    <li role="menuitem">
+                      <a href="./studentCare/studentServices.html">
+                        خدمات الطلاب
+                      </a>
+                    </li>
+
+                    <li role="menuitem">
+                      <a href="./studentCare/achievementScience.html">
+                        الأنجازات العلمية للطلاب
+                      </a>
+                    </li>
+
+                    <li role="menuitem">
+                      <a href="./studentCare/electronicServices.html">
+                        خدمات ألكترونية
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="dropdown" role="menuitem">
+                  <a href="#" aria-expanded="false" aria-haspopup="true">
+                    وحدات
+                    <i class="fas fa-chevron-down dropdown-icon"></i>
+                  </a>
+                  <ul class="dropdown-content" role="menu">
+                    <li role="menuitem">
+                      <a href="units/qualityAssuranceUnit.html">
+                        وحدة الأبتكار وريادة الأعمال
+                      </a>
+                    </li>
+                    <li role="menuitem">
+                      <a href="units/traningUnit.html">
+                        وحدةالتدريب الميداني
+                      </a>
+                    </li>
+                    <li role="menuitem">
+                      <a href="units/graduationJopUnit.html">
+                        وحدةوحدة الخريجين و التوظيف
+                      </a>
+                    </li>
+                    <li role="menuitem">
+                      <a href="units/qulityUnit.html"> وحدة ضمان الجودة </a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="dropdown" role="menuitem">
+                  <a href="#" aria-expanded="false" aria-haspopup="true">
+                    خدمة المجتمع
+                    <i class="fas fa-chevron-down dropdown-icon"></i>
+                  </a>
+                  <ul class="dropdown-content" role="menu">
+                    <li role="menuitem">
+                      <a href="./socialServices/executePlan.html">
+                        الخطة التنفيذية السنوية
+                      </a>
+                    </li>
+                    <li role="menuitem">
+                      <a href="./socialServices/awarnessProgram.html">
+                        برامج التوعية وتنمية البيئة
+                      </a>
+                    </li>
+                    <li role="menuitem">
+                      <a href="./socialServices/associatedEntities.html">
+                        الكيانات المرتبطة بالمجتمع
+                      </a>
+                    </li>
+                    <li role="menuitem">
+                      <a href="./socialServices/activitySocietyServices.html">
+                        أنشطة خدمة المجتمع و البيئة
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="dropdown searchClick" role="menuitem">
+                  <a
+                    href="search/searchSection.html"
+                    aria-expanded="false"
+                    aria-haspopup="true"
+                  >
+                    بحث ومؤتمرات
+                  </a>
+                </li>
+              </ul>
+            </nav>
+
+            <button
+              class="mobile-menu-btn"
+              id="mobileMenuBtn"
+              aria-label="فتح القائمة"
+            >
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Mobile Navigation -->
+    <nav class="nav-mobile" id="mobileNav" aria-label="قائمة الجوال">
+      <button class="close-btn" id="closeMobileNav" aria-label="إغلاق القائمة">
+        <i class="fas fa-times"></i>
+      </button>
+
+      <div class="mobile-logo">
+        <img src="./assets/image/ndeti-logo.png" alt="شعار المعهد" />
+        <h3>المعهد العالي للهندسة والتكنولوجيا</h3>
+      </div>
+
+      <ul class="mobile-main-menu">
+        <li class="menu-item">
+          <a href="index.html">
+            <i class="fas fa-home"></i>
+            الصفحة الرئيسية
+          </a>
+        </li>
+
+        <li class="menu-item">
+          <button class="dropdown-toggle" aria-expanded="false">
+            <span>
+              <i class="fas fa-university"></i>
+              عن المعهد
+            </span>
+            <i class="fas fa-chevron-down toggle-icon"></i>
+          </button>
+          <ul class="submenu">
+            <li>
+              <a href="./aboutInstitute/structureModel.html">الهيكل التنظيمي</a>
+            </li>
+            <li><a href="aboutInstitute/leader.html">عميد المعهد</a></li>
+            <li>
+              <a href="aboutInstitute/listOfStuts.html">رؤية و رسالة المعهد</a>
+            </li>
+            <li><a href="aboutInstitute/rateOfStatus.html">تقييم المعهد</a></li>
+            <li><a href="aboutInstitute/selfStudy.html">الدراسة الذاتية</a></li>
+            <li><a href="aboutInstitute/systemStydy.html">نظام المعهد</a></li>
+            <li>
+              <a href="aboutInstitute/studentDirection.html"
+                >قواعد توزيع الطلاب علي التخصصات</a
+              >
+            </li>
+            <li>
+              <a href="./aboutInstitute/functional.html">قرار المعادلة</a>
+            </li>
+            <li>
+              <a href="./aboutInstitute/groups.html">أجتماهات و فعاليات</a>
+            </li>
+            <li><a href="./aboutInstitute/jops.html">أعلان وظائف</a></li>
+          </ul>
+        </li>
+
+        <li class="menu-item">
+          <button class="dropdown-toggle" aria-expanded="false">
+            <span>
+              <i class="fas fa-graduation-cap"></i>
+              الأقسام العلمية
+            </span>
+            <i class="fas fa-chevron-down toggle-icon"></i>
+          </button>
+          <ul class="submenu">
+            <li>
+              <a href="./sections/baisicScience.html">قسم العلوم الأساسية</a>
+            </li>
+            <li>
+              <a href="./sections/engineerSection.html">قسم الهندسة المدنية</a>
+            </li>
+            <li>
+              <a href="./sections/chimecalSection.html"
+                >قسم الهندسة الكيميائية</a
+              >
+            </li>
+            <li>
+              <a href="./sections/electronicSection.html"
+                >قسم هندسة الإتصالات و الإلكترونيات</a
+              >
+            </li>
+          </ul>
+        </li>
+
+        <li class="menu-item">
+          <button class="dropdown-toggle" aria-expanded="false">
+            <span>
+              <i class="fas fa-users"></i>
+              شئون الطلاب
+            </span>
+            <i class="fas fa-chevron-down toggle-icon"></i>
+          </button>
+          <ul class="submenu">
+            <li>
+              <a href="./studentCare/enrollAcademic.html">التسجيل الأكاديمي</a>
+            </li>
+            <li>
+              <a href="./studentCare/studentCare.html"
+                >الأرشاد الأكاديمي و الريادة العلمية</a
+              >
+            </li>
+            <li>
+              <a href="./studentCare/supportAcademic.html">الدعم الاكاديمي</a>
+            </li>
+            <li>
+              <a href="./studentCare/studentTraining.html">تدريبات الطلاب</a>
+            </li>
+            <li>
+              <a href="./studentCare/examDictionary.html"
+                >شئون الدراسة والأمتحانات</a
+              >
+            </li>
+            <li>
+              <a href="./studentCare/resultOfStudent.html">نتائج الطلاب</a>
+            </li>
+            <li>
+              <a href="./studentCare/studentServices.html">خدمات الطلاب</a>
+            </li>
+            <li>
+              <a href="./studentCare/achievementScience.html"
+                >الأنجازات العلمية للطلاب</a
+              >
+            </li>
+            <li>
+              <a href="./studentCare/electronicServices.html"
+                >خدمات ألكترونية</a
+              >
+            </li>
+          </ul>
+        </li>
+
+        <li class="menu-item">
+          <button class="dropdown-toggle" aria-expanded="false">
+            <span>
+              <i class="fas fa-th-large"></i>
+              وحدات
+            </span>
+            <i class="fas fa-chevron-down toggle-icon"></i>
+          </button>
+          <ul class="submenu">
+            <li>
+              <a href="./units/qualityAssuranceUnit.html"
+                >وحدة الأبتكار وريادة الأعمال</a
+              >
+            </li>
+            <li><a href="./units/traningUnit.html">وحدة تدريب ميداني</a></li>
+            <li>
+              <a href="./units/graduationJopUnit.html">وحدة خرييجين وتوظيف</a>
+            </li>
+            <li><a href="./units/qulityUnit.html">وحدة ضمان الجودة</a></li>
+          </ul>
+        </li>
+
+        <li class="menu-item">
+          <button class="dropdown-toggle" aria-expanded="false">
+            <span>
+              <i class="fas fa-hands-helping"></i>
+              خدمة المجتمع
+            </span>
+            <i class="fas fa-chevron-down toggle-icon"></i>
+          </button>
+          <ul class="submenu">
+            <li>
+              <a href="./socialServices/executePlan.html"
+                >الخطة التنفيذية السنوية</a
+              >
+            </li>
+            <li>
+              <a href="./socialServices/awarnessProgram.html"
+                >برامج التوعية وتنمية البيئة</a
+              >
+            </li>
+            <li>
+              <a href="./socialServices/associatedEntities.html"
+                >الكيانات المرتبطة بالمجتمع والبيئة</a
+              >
+            </li>
+            <li>
+              <a href="./socialServices/activitySocietyServices.html"
+                >أنشطة خدمة المجتمع والبيئة</a
+              >
+            </li>
+          </ul>
+        </li>
+
+        <li class="menu-item">
+          <button class="dropdown-toggle" aria-expanded="false">
+            <span>
+              <i class="fas fa-microscope"></i>
+
+              <a href="./search/searchSection.html"> البحث والمؤتمرات </a></span
+            >
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <!-- end header -->
+
+    <!-- Hero Slider -->
+    <main class="hero-slider">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="slide-content">
+              <div class="slide-overlay"></div>
+              <img src="./assets/image/bg2.webp" alt="صورة 1" />
+              <div class="slide-text">
+                <div class="container">
+                  <span class="slide-badge">مرحباً بكم</span>
+                  <h1 class="slide-title">
+                    المعهد العالي للهندسة والتكنولوجيا
+                  </h1>
+                  <p class="slide-description">
+                    نبني مستقبل الهندسة بالتميز والإبداع
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="slide-content">
+              <div class="slide-overlay"></div>
+              <img src="./assets/image/bg2.webp" alt="صورة 2" />
+              <div class="slide-text">
+                <div class="container">
+                  <span class="slide-badge">التميز الأكاديمي</span>
+                  <h1 class="slide-title">برامج أكاديمية متطورة</h1>
+                  <p class="slide-description">
+                    نقدم أحدث البرامج الهندسية بمعايير عالمية
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="slide-content">
+              <div class="slide-overlay"></div>
+              <img src="./assets/image/bg3.webp" alt="صورة 3" />
+              <div class="slide-text">
+                <div class="container">
+                  <span class="slide-badge">انضم إلينا</span>
+                  <h1 class="slide-title">ابدأ رحلتك الهندسية معنا</h1>
+                  <p class="slide-description">تعليم متميز وفرص لا محدودة</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Quick Stats -->
+    <section class="quick-stats section-home">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card animate-on-scroll">
+            <div class="stat-icon">
+              <i class="fas fa-user-graduate"></i>
+            </div>
+            <div class="stat-content">
+              <h3 class="stat-number" data-target="930">0</h3>
+              <p class="stat-label">طالب وطالبة</p>
+            </div>
+          </div>
+
+          <div class="stat-card animate-on-scroll">
+            <div class="stat-icon">
+              <i class="fas fa-chalkboard-teacher"></i>
+            </div>
+            <div class="stat-content">
+              <h3 class="stat-number" data-target="30">0</h3>
+              <p class="stat-label">عضو هيئة تدريس</p>
+            </div>
+          </div>
+
+          <div class="stat-card animate-on-scroll">
+            <div class="stat-icon">
+              <i class="fas fa-trophy"></i>
+            </div>
+            <div class="stat-content">
+              <h3 class="stat-number" data-target="40">0</h3>
+              <p class="stat-label">عضو هيئة معاونة</p>
+            </div>
+          </div>
+
+          <div class="stat-card animate-on-scroll">
+            <div class="stat-icon">
+              <i class="fas fa-building"></i>
+            </div>
+            <div class="stat-content">
+              <h3 class="stat-number" data-target="4">0</h3>
+              <p class="stat-label">أقسام علمية</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+      <!-- About Section -->
+      <section class="about-section section-home">
+        <div class="container">
+          <div class="about-content">
+            <div class="about-text animate-on-scroll">
+              <span class="section-badge">عن المعهد</span>
+              <h2 class="section-title">
+                المعهد العالي للهندسة والتكنولوجيا بدمياط
+              </h2>
+              <p class="about-description">
+                يُعد المعهد العالي للهندسة والتكنولوجيا بدمياط الجديدة واحداً من
+                أبرز المؤسسات التعليمية الهندسية في مصر، حيث يسعى لتقديم تعليم
+                هندسي متميز يواكب أحدث التطورات العالمية ويلبي احتياجات سوق
+                العمل المحلي والإقليمي.
+              </p>
+              <p class="about-description">
+                نفخر بتقديم برامج أكاديمية متطورة في مختلف التخصصات الهندسية، مع
+                التركيز على الجانب العملي والتطبيقي لإعداد مهندسين أكفاء قادرين
+                على المنافسة في سوق العمل العالمي.
+              </p>
+              <div class="about-features">
+                <div class="feature-item">
+                  <i class="fas fa-check-circle"></i>
+                  <span>اعتماد أكاديمي محلي ودولي</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-check-circle"></i>
+                  <span>مختبرات وورش عمل حديثة</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-check-circle"></i>
+                  <span>كادر تدريسي متميز</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-check-circle"></i>
+                  <span>شراكات مع الصناعة</span>
+                </div>
+              </div>
+              <div class="about-buttons">
+                <a
+                  href="http://std.ndeti.edu.eg/login"
+                  class="btn btn-primary btn-large"
+                >
+                  <span> للدخول لنظام بن عقيل</span>
+                  <i class="fas fa-arrow-left"></i>
+                </a>
+                <a
+                  href="http://3.217.6.68/?redirect=0"
+                  class="btn btn-outline btn-large"
+                >
+                  <span>للدخول للمنصة</span>
+                  <i class="fas fa-arrow-left"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="about-image animate-on-scroll">
+              <div class="image-wrapper">
+                <img src="assets/image/bg2.webp" alt="عن المعهد" />
+                <div class="image-decoration">
+                  <div class="decoration-circle"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Departments Section -->
+      <section class="departments-section section-home">
+        <div class="container">
+          <div class="section-header animate-on-scroll">
+            <span class="section-badge">أقسامنا العلمية</span>
+            <h2 class="section-title">التخصصات الهندسية</h2>
+            <p class="section-description">
+              نقدم مجموعة متنوعة من البرامج الهندسية المتخصصة التي تلبي احتياجات
+              سوق العمل
+            </p>
+          </div>
+
+          <div class="departments-grid">
+            <div class="department-card animate-on-scroll">
+              <div class="department-icon">
+                <i class="fas fa-flask"></i>
+              </div>
+              <h3 class="department-title">العلوم الأساسية</h3>
+              <p class="department-description">
+                أساس قوي في الرياضيات والفيزياء والكيمياء لبناء المعرفة الهندسية
+              </p>
+              <a href="sections/baisicScience.html" class="department-link">
+                <span>اكتشف المزيد</span>
+                <i class="fas fa-arrow-left"></i>
+              </a>
+            </div>
+
+            <div class="department-card animate-on-scroll">
+              <div class="department-icon">
+                <i class="fas fa-hard-hat"></i>
+              </div>
+              <h3 class="department-title">الهندسة المدنية</h3>
+              <p class="department-description">
+                تصميم وبناء البنية التحتية والمشاريع العمرانية الحديثة
+              </p>
+              <a href="sections/engineerSection.html" class="department-link">
+                <span>اكتشف المزيد</span>
+                <i class="fas fa-arrow-left"></i>
+              </a>
+            </div>
+
+            <div class="department-card animate-on-scroll">
+              <div class="department-icon">
+                <i class="fas fa-atom"></i>
+              </div>
+              <h3 class="department-title">الهندسة الكيميائية</h3>
+              <p class="department-description">
+                الابتكار في العمليات الصناعية والإنتاج الكيميائي المستدام
+              </p>
+              <a href="sections/chimecalSection.html" class="department-link">
+                <span>اكتشف المزيد</span>
+                <i class="fas fa-arrow-left"></i>
+              </a>
+            </div>
+
+            <div class="department-card animate-on-scroll">
+              <div class="department-icon">
+                <i class="fas fa-microchip"></i>
+              </div>
+              <h3 class="department-title">الاتصالات والإلكترونيات</h3>
+              <p class="department-description">
+                أحدث التقنيات في الاتصالات والأنظمة الإلكترونية المتطورة
+              </p>
+              <a href="sections/electronicSection.html" class="department-link">
+                <span>اكتشف المزيد</span>
+                <i class="fas fa-arrow-left"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- News Section -->
+      <section class="news-section section-home">
+        <div class="container">
+          <div class="section-header animate-on-scroll">
+            <span class="section-badge">آخر الأخبار</span>
+            <h2 class="section-title">الأخبار والفعاليات</h2>
+            <p class="section-description">
+              تابع آخر الأخبار والأحداث في المعهد
+            </p>
+          </div>
+
+          <div class="news-grid">
+            <article class="news-card featured-news animate-on-scroll">
+              <div class="news-image">
+                <img src="assets/image/أعتماد.jpeg" alt="خبر مميز" />
+                <span class="news-badge">مميز</span>
+              </div>
+              <div class="news-content">
+                <div class="news-meta">
+                  <span class="news-date">
+                    <i class="far fa-calendar"></i>
+                    28 نوفمبر 2025
+                  </span>
+                  <span class="news-category">إنجازات المعهد</span>
+                </div>
+                <h3 class="news-title">
+                  الأعتماد المؤسسي من الهيئة القومية لضمان جودة التعليم
+                  والأعتماد
+                </h3>
+                <p class="news-excerpt">
+                  يسر إدارة المعهد العالي للهندسة والتكنولوجيا بدمياط الجديدة أن
+                  تزف لأسرة المعهد كافة من أعضاء الجهاز الأكاديمي والجهاز
+                  الإداري والأطراف المجتمعية وأولياء الأمور والخريجون والطلاب
+                  بشرى حصول المعهد على الاعتماد المؤسسي من الهيئة القومية لضمان
+                  جودة التعليم والاعتماد بناءا على قرار مجلس إدارة الهيئة بتاريخ
+                  26 نوفمبر 2025. هذا الإنجاز لم يكن ليتحقق إلا بفضل وتوفيق الله
+                  عز وجل في المقام الأول ثم مجهود المنظومة بأكملها والعمل
+                  المتواصل من جميع الإدارات والوحدات داخل المعهد، مما يعكس
+                  التزامًا حقيقيًا بالجودة والتطوير المستمر، ودعمًا لمسيرة
+                  المعهد نحو الريادة والتميز.
+                </p>
+                <!-- <a href="#" class="news-link">
+                  <span>اقرأ المزيد</span>
+                  <i class="fas fa-arrow-left"></i>
+                </a> -->
+              </div>
+            </article>
+
+            <article class="news-card animate-on-scroll">
+              <div class="news-image">
+                <img src="assets/image/تخرج .jpeg" alt="خبر" />
+              </div>
+              <div class="news-content">
+                <div class="news-meta">
+                  <span class="news-date">
+                    <i class="far fa-calendar"></i>
+                    24 أغسطس 2025
+                  </span>
+                  <span class="news-category">إحتفاليات</span>
+                </div>
+                <h3 class="news-title">حفل تخرج 2025</h3>
+                <p class="news-excerpt">
+                  في رحاب الاحتفال بحفل التخرج، تشرّفنا بحضور كوكبة من القامات
+                  الوطنية ورجال الدولة الذين أضفوا على يومنا طابعًا من الفخر
+                  والاعتزاز. وقد جاء حضورهم الكريم ليعكس اهتمامهم وحرصهم على دعم
+                  أبنائنا الطلاب في مسيرتهم العلمية والعملية. وما هذه اللقطات
+                  التي نعرضها اليوم إلا جانبًا من تلك القامات التي أنارت الحفل
+                  بوجودها، لتبقى البصمة الأجمل هي اجتماعهم جميعًا على مشاركة
+                  أبنائنا فرحتهم في يوم حصادهم. إن معهدنا إذ يثمّن هذه اللفتة
+                  الكريمة، يتوجّه بخالص الشكر والتقدير إلى السادة الضيوف
+                  الأفاضل، الذين شرفونا بحضورهم وشاركوا أبناءنا الخريجين فرحتهم.
+                </p>
+                <a href="units/graduationParty.html" class="news-link">
+                  <span>اقرأ المزيد</span>
+                  <i class="fas fa-arrow-left"></i>
+                </a>
+              </div>
+            </article>
+
+            <article class="news-card animate-on-scroll">
+              <div class="news-image">
+                <img src="assets/image/تربيه عسكريه ولاد.jpg" alt="خبر" />
+              </div>
+              <div class="news-content">
+                <div class="news-meta">
+                  <span class="news-date">
+                    <i class="far fa-calendar"></i>
+                    4 يناير 2026
+                  </span>
+                  <span class="news-category">فعاليات</span>
+                </div>
+                <h3 class="news-title">التربية العسكرية بالمعهد</h3>
+                <p class="news-excerpt">حفل ختام التربية العسكرية بالمعهد</p>
+                <a href="#" class="news-link">
+                  <span>اقرأ المزيد</span>
+                  <i class="fas fa-arrow-left"></i>
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <div class="section-buttons animate-on-scroll">
+            <button class="btn btn-primary btn-large">
+              <span
+                ><a href="aboutInstitute/groups.html">
+                  شاهد جميع الأخبار
+                </a></span
+              >
+              <i class="fas fa-newspaper"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Leaders Section -->
+      <section class="leaders-section section-home">
+        <div class="container">
+          <div class="section-header animate-on-scroll">
+            <span class="section-badge">قيادات المعهد</span>
+            <h2 class="section-title">القيادة الأكاديمية</h2>
+            <p class="section-description">تعرف على قيادات المعهد المتميزة</p>
+          </div>
+
+          <div class="leader-cards-grid">
+            <div class="leader-card animate-on-scroll">
+              <div class="leader-image-wrapper">
+                <img
+                  src="assets/image/وليد حطاب.jpeg"
+                  alt="عميد المعهد"
+                  class="leader-img"
+                />
+                <div class="leader-overlay">
+                  <div class="leader-social">
+                    <a href="#" aria-label="البريد الإلكتروني">
+                      <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="#" aria-label="لينكد إن">
+                      <i class="fab fa-yahoo"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="leader-info">
+                <h3 class="leader-name">أ.د. خالد فوزي</h3>
+                <p class="leader-title">رئيس مجلس إدارة المعهد</p>
+              </div>
+            </div>
+
+            <div class="leader-card animate-on-scroll">
+              <div class="leader-image-wrapper">
+                <img
+                  src="assets/image/عميد المعهد.jpg"
+                  alt="عميد المعهد"
+                  class="leader-img"
+                />
+                <div class="leader-overlay">
+                  <div class="leader-social">
+                    <a href="#" aria-label="البريد الإلكتروني">
+                      <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="#" aria-label="لينكد إن">
+                      <i class="fab fa-yahoo"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="leader-info">
+                <h3 class="leader-name">أ.د. خالد فوزي</h3>
+                <p class="leader-title">عميد المعهد</p>
+              </div>
+            </div>
+
+            <div class="leader-card animate-on-scroll">
+              <div class="leader-image-wrapper">
+                <img
+                  src="assets/image/khaled samir.jpeg"
+                  alt="وكيل المعهد"
+                  class="leader-img"
+                />
+                <div class="leader-overlay">
+                  <div class="leader-social">
+                    <a href="#" aria-label="البريد الإلكتروني">
+                      <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="khaled_samir@yahoo.com" aria-label="لينكد إن">
+                      <i class="fab fa-yahoo"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="leader-info">
+                <h3 class="leader-name">د. خالد سمير</h3>
+                <p class="leader-title">وكيل المعهد</p>
+                <!-- <p class="leader-description">رئيس مجلس الإدارة</p> -->
+              </div>
+            </div>
+
+            <div class="leader-card animate-on-scroll">
+              <div class="leader-image-wrapper">
+                <img
+                  src="assets/image/د رمضان .jpeg"
+                  alt="وكيل المعهد"
+                  class="leader-img"
+                />
+                <div class="leader-overlay">
+                  <div class="leader-social">
+                    <a href="#" aria-label="البريد الإلكتروني">
+                      <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="drramadanelkatep@yahoo.com" aria-label="لينكد إن">
+                      <i class="fab fa-yahoo"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="leader-info">
+                <h3 class="leader-name">د. رمضان عبد الغني</h3>
+                <p class="leader-title">وكيل المعهد</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Important Links Section -->
+    <section class="important-links-section section-home">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <h2 class="section-title">روابط هامة</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="links-grid">
+          <!-- Link 1 -->
+          <a
+            href="https://scu.eg/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link-card animate-on-scroll"
+          >
+            <div class="link-icon">
+              <i class="fas fa-university"></i>
+            </div>
+            <div class="link-content">
+              <h3 class="link-title">المجلس الأعلى للجامعات</h3>
+              <p class="link-description">
+                الموقع الرسمي للمجلس الأعلى للجامعات
+              </p>
+            </div>
+            <div class="link-arrow">
+              <i class="fas fa-arrow-left"></i>
+            </div>
+          </a>
+
+          <!-- Link 2 -->
+          <a
+            href="https://mohesr.gov.eg/ar/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link-card animate-on-scroll"
+          >
+            <div class="link-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="link-content">
+              <h3 class="link-title">وزارة التعليم العالي والبحث العلمي</h3>
+              <p class="link-description">الموقع الرسمي للوزارة</p>
+            </div>
+            <div class="link-arrow">
+              <i class="fas fa-arrow-left"></i>
+            </div>
+          </a>
+
+          <!-- Link 3 -->
+          <a
+            href="https://naqaae.eg/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link-card animate-on-scroll"
+          >
+            <div class="link-icon">
+              <i class="fas fa-certificate"></i>
+            </div>
+            <div class="link-content">
+              <h3 class="link-title">
+                الهيئة القومية لضمان جودة التعليم والاعتماد
+              </h3>
+              <p class="link-description">الموقع الرسمي للهيئة</p>
+            </div>
+            <div class="link-arrow">
+              <i class="fas fa-arrow-left"></i>
+            </div>
+          </a>
+
+          <!-- Link 4 -->
+          <a
+            href="https://www.facebook.com/share/18CsPf6vMg/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link-card animate-on-scroll"
+          >
+            <div class="link-icon">
+              <i class="fab fa-facebook"></i>
+            </div>
+            <div class="link-content">
+              <h3 class="link-title">صفحة المعهد على فيسبوك</h3>
+              <p class="link-description">تابع آخر الأخبار والفعاليات</p>
+            </div>
+            <div class="link-arrow">
+              <i class="fas fa-arrow-left"></i>
+            </div>
+          </a>
+
+          <!-- Link 5 -->
+          <a
+            href="http://www.aaru.edu.jo/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link-card animate-on-scroll"
+          >
+            <div class="link-icon">
+              <i class="fas fa-globe-asia"></i>
+            </div>
+            <div class="link-content">
+              <h3 class="link-title">اتحاد الجامعات العربية</h3>
+              <p class="link-description">الموقع الرسمي للاتحاد</p>
+            </div>
+            <div class="link-arrow">
+              <i class="fas fa-arrow-left"></i>
+            </div>
+          </a>
+
+          <!-- Link 6 -->
+          <a
+            href="https://www.ekb.eg/ar/home"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link-card animate-on-scroll"
+          >
+            <div class="link-icon">
+              <i class="fas fa-book-reader"></i>
+            </div>
+            <div class="link-content">
+              <h3 class="link-title">بنك المعرفة المصري</h3>
+              <p class="link-description">مصادر علمية وبحثية متنوعة</p>
+            </div>
+            <div class="link-arrow">
+              <i class="fas fa-arrow-left"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map -->
+    <section class="map-section section-home">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.2033940491115!2d31.672637425578834!3d31.43606705130441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f9e25263396949%3A0x3c0cd1911065acb4!2z2KfZhNmF2LnZh9ivINin2YTYudin2YTZiiDZhNmE2YfZhtiv2LPYqSDZiNin2YTYqtmD2YbZiNmE2YjYrNmK2Kc!5e0!3m2!1sar!2seg!4v1761038572009!5m2!1sar!2seg"
+        width="100%"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-logo">
+            <div class="image-foot animate-on-scroll">
+              <img src="assets/image/ndeti-logo.png" alt="شعار المعهد" />
+              <h2>المعهد العالي للهندسة والتكنولوجيا</h2>
+              <p>بدمياط الجديدة</p>
+            </div>
+            <p class="footer-description">
+              نسعى لتقديم تعليم هندسي متميز يواكب التطورات العالمية ويلبي
+              احتياجات سوق العمل
+            </p>
+            <div class="footer-social">
+              <a
+                href="https://www.facebook.com/share/18CsPf6vMg/"
+                aria-label="فيسبوك"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+
+              <a href="mailto:contact@ndeti.edu.eg" aria-label=" جيميل">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+              <a href="http://3.217.6.68/?redirect=0" aria-label="جوجل">
+                <i class="fas fa-laptop-code"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-column footer-links animate-on-scroll">
+            <h3 class="footer-title">عن المعهد</h3>
+            <ul class="footer-list">
+              <li>
+                <a href="./aboutInstitute/structureModel.html"
+                  >الهيكل التنظيمي</a
+                >
+              </li>
+              <li><a href="./aboutInstitute/leader.html">عميد المعهد</a></li>
+              <li>
+                <a href="./aboutInstitute/listOfStuts.html">لائحة المعهد</a>
+              </li>
+              <li>
+                <a href="./aboutInstitute/rateOfStatus.html">تقييم المعهد</a>
+              </li>
+              <li>
+                <a href="./aboutInstitute/selfStudy.html">الدراسة الذاتية</a>
+              </li>
+              <li>
+                <a href="./aboutInstitute/systemStydy.html">نظام الدراسة</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-column footer-links animate-on-scroll">
+            <h3 class="footer-title">الأقسام العلمية</h3>
+            <ul class="footer-list">
+              <li>
+                <a href="./sections/baisicScience.html">قسم العلوم الأساسية</a>
+              </li>
+              <li>
+                <a href="./sections/engineerSection.html"
+                  >قسم الهندسة المدنية</a
+                >
+              </li>
+              <li>
+                <a href="./sections/chimecalSection.html"
+                  >قسم الهندسة الكيميائية</a
+                >
+              </li>
+              <li>
+                <a href="./sections/electronicSection.html"
+                  >قسم الاتصالات والإلكترونيات</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-column footer-contact animate-on-scroll">
+            <h3 class="footer-title">تواصل معنا</h3>
+            <ul class="contact-list">
+              <li class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span
+                  >دمياط الجديدة - المنطقة المركزية - الهيكلة الثانية - أمام
+                  الحي الرابع</span
+                >
+              </li>
+              <li class="contact-item">
+                <i class="fas fa-phone-alt"></i>
+                <div class="phone-numbers">
+                  <span>057-2413235</span>
+                  <span>01007400202</span>
+                  <span>057-2407520</span>
+                  <span>057-2408620</span>
+                </div>
+              </li>
+              <li class="contact-item">
+                <a href="mailto:contact@ndeti.edu.eg" class="contact-link">
+                  <i class="fas fa-envelope"></i>
+                  <span>contact@ndeti.edu.eg</span>
+                </a>
+              </li>
+              <li class="contact-item">
+                <i class="fas fa-clock"></i>
+                <span>السبت - الأربعاء : 9:00 ص - 4:00 م</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom animate-on-scroll">
+          <p class="copyright">
+            المعهد العالي للهندسة والتكنولوجيا. جميع الحقوق محفوظة
+            <!-- <i class="far fa-copyright"></i> 2026 -->
+          </p>
+          <p class="developer">
+            تصميم وتطوير بواسطة
+            <a
+              href="https://www.linkedin.com/in/nada-refaat-eraky-358840345?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              >NRE</a
+            >
+          </p>
+        </div>
+      </div>
+
+      <a href="#top" class="scroll-to-top" aria-label="العودة إلى الأعلى">
+        <i class="fas fa-arrow-up"></i>
+      </a>
+    </footer>
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/javaScript/main.js"></script>
+    <script src="assets/javaScript/popUp.js"></script>
+  </body>
+</html>

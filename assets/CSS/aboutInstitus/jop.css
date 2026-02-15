@@ -1,0 +1,88 @@
+:root {
+  --color-primary: #0055aa;
+  --color-primary-dark: #0b2545;
+  --color-secondary: #bd9d6c;
+  --color-text-dark: #333;
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.288),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+.body-section {
+  margin: 80px auto;
+  padding: 0 20px;
+  text-align: center;
+  max-width: 800px;
+}
+
+.body-section h1 {
+  color: var(--color-primary-dark);
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  margin-bottom: 40px;
+  position: relative;
+  display: inline-block;
+}
+
+.body-section h1::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  max-width: 250px;
+  height: 4px;
+  background-color: var(--color-secondary);
+  border-radius: 2px;
+}
+
+.body-section p {
+  color: var(--color-secondary);
+  font-weight: 700;
+  font-size: clamp(1.1rem, 3vw, 1.5rem);
+  padding: 30px;
+  border: 3px dashed var(--color-secondary);
+  border-radius: 15px;
+  background-color: #fffaf0;
+  line-height: 1.6;
+  box-shadow: var(--shadow-lg);
+}
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  will-change: opacity, transform;
+}
+
+.animate-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 992px) {
+  .nav-desktop {
+    display: none;
+  }
+  .mobile-menu-btn {
+    display: block;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 993px) {
+  .mobile-menu-btn,
+  .nav-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+.result_Student{
+  color: rgba(87, 4, 4, 0.692);
+}

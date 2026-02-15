@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body-bage {
+  margin: 50px auto;
+  max-width: 900px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.body-section,
+.massage-of-status,
+.system-of-study,
+.exam-management {
+  padding: 25px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  border-right: 5px solid var(--color-secondary, #bd9d6c);
+  transition: all 0.3s ease;
+}
+
+.body-section:hover,
+.massage-of-status:hover,
+.system-of-study:hover,
+.exam-management:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.body-section h1,
+.massage-of-status h1,
+.system-of-study h1,
+.exam-management h1 {
+  color: var(--color-primary-dark, #0b2545);
+  margin-bottom: 20px;
+  font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+  padding-bottom: 5px;
+  border-bottom: 2px dashed #eee;
+}
+
+.exam-management h3 {
+  color: var(--color-secondary, #bd9d6c);
+  margin-bottom: 15px;
+  margin-top: 10px;
+  font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+}
+
+.body-section p,
+.massage-of-status p,
+.exam-management p {
+  font-size: clamp(0.95rem, 2vw, 1.1rem);
+  line-height: 1.8;
+  color: var(--color-text-dark, #333);
+  text-align: justify;
+}
+
+.exam-management .bold {
+  font-weight: 700;
+  color: var(--color-primary-dark, #0b2545);
+  display: block;
+  margin-bottom: 5px;
+}
+
+.list-of-section ul {
+  list-style: none;
+  padding-right: 0;
+  margin-top: 15px;
+}
+.list-of-section li {
+  padding-right: 25px;
+  position: relative;
+  margin-bottom: 8px;
+  font-size: 1.05rem;
+  color: var(--color-primary-dark, #0b2545);
+}
+.list-of-section li::before {
+  content: "\f054";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  color: var(--color-secondary, #bd9d6c);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.8rem;
+}
+.image-body {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.image-body img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  border: 1px solid #eee;
+}
+.list-study {
+  list-style: none;
+  padding-right: 0;
+}
+.list-study li {
+  margin-bottom: 10px;
+}
+.list-study a {
+  font-weight: 700;
+  color: var(--color-secondary, #bd9d6c);
+  text-decoration: none;
+  transition: color 0.3s;
+  display: block;
+  padding-right: 15px;
+}
+.list-study a:hover {
+  color: var(--color-primary-dark, #0b2545);
+  text-decoration: underline;
+}
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition:
+    opacity 0.8s ease-out,
+    transform 0.8s ease-out;
+  will-change: opacity, transform;
+}
+
+.animate-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.no-scroll {
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .body-bage {
+    margin: 20px auto;
+    padding: 0 15px;
+    gap: 20px;
+  }
+.list-study a {
+  font-size: 1rem;
+}
+  .body-section,
+  .massage-of-status,
+  .system-of-study,
+  .exam-management {
+    padding: 15px;
+    border-right-width: 4px;
+  }
+
+  .body-section p,
+  .massage-of-status p,
+  .system-of-study p,
+  .exam-management p,
+  .list-of-section li {
+    text-align: right;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .body-section h1,
+  .massage-of-status h1,
+  .system-of-study h1,
+  .exam-management h1 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+  }
+
+  .image-body {
+    margin-bottom: 20px;
+  }
+
+  .image-body img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+
+  .list-of-section li {
+    padding-right: 20px;
+    margin-bottom: 8px;
+  }
+
+  .list-of-section li::before {
+    font-size: 0.7rem;
+  }
+}

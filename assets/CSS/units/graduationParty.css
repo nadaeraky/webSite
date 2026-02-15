@@ -1,0 +1,98 @@
+body {
+  font-family: "Cairo", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  text-align: right;
+}
+.season-title{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+
+.graduation-gallery {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-content {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.university-logo {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-content h1 {
+  color: #004a7c;
+  font-size: 2.5em;
+  margin-bottom: 5px;
+}
+
+.header-content p {
+  color: #666;
+  font-size: 1.2em;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 15px;
+}
+
+@media (min-width: 900px) {
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .item-large {
+    grid-column: span 2;
+  }
+  .item-full-width {
+    grid-column: 1 / -1;
+  }
+}
+
+.gallery-item {
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery-item:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+  .header-content h1 {
+    font-size: 1.8em;
+  }
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .gallery-item {
+    height: 250px;
+  }
+}

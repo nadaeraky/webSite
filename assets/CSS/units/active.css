@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Colors */
+  --color-primary: #1d4ed8;
+  --color-primary-dark: #0b2545;
+  --color-secondary: #bd9d6c;
+  --color-text-dark: #333;
+  --color-font: #dfc296;
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.288),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+.body-section {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: var(--shadow-md);
+}
+
+.body-section h1 {
+  color: var(--color-primary-dark);
+  border-bottom: solid 4px var(--color-secondary);
+  width: fit-content;
+  margin-bottom: 30px;
+  padding: 10px;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+}
+.body-section h2 {
+  text-indent: 10px;
+  margin-bottom: 20px;
+  color: var(--color-primary);
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
+  text-align: right;
+}
+.events-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
+  text-align: right;
+}
+
+.events-list li {
+  margin-bottom: 12px;
+  line-height: 1.5;
+  transition: all 0.3s;
+  padding-right: 25px;
+  position: relative;
+  font-size: 1.05rem;
+}
+.events-list li:hover {
+  transform: translateX(-5px);
+  color: var(--color-secondary);
+}
+
+.events-list li i {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  color: var(--color-primary);
+  font-size: 0.9rem;
+}
+.events-list a {
+  text-decoration: none;
+  color: var(--color-primary-dark);
+  transition: all 0.3s;
+  cursor: pointer;
+  display: inline;
+}
+
+.events-list a:hover {
+  color: var(--color-secondary);
+  text-decoration: underline;
+  border: none;
+}
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  will-change: opacity, transform;
+}
+
+.animate-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+@media (max-width: 992px) {
+  .nav-desktop {
+    display: none;
+  }
+  .mobile-menu-btn {
+    display: block;
+  }
+}
+@media (min-width: 993px) {
+  .mobile-menu-btn,
+  .nav-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .body-section {
+    padding: 15px;
+  }
+  .body-section h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  .events-list li {
+    font-size: 0.95rem;
+  }
+}
