@@ -55,7 +55,9 @@ header p {
   border-radius: 8px;
   margin-bottom: 30px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   border-top: 5px solid var(--color-primary);
 }
 
@@ -131,178 +133,11 @@ header p {
   }
 
   .meeting-note {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .resolutions-list li {
     font-size: 0.95rem;
     padding-right: 15px;
-  }
-}
-
-/* النشرات */
-.reports-section {
-  margin-top: 50px;
-}
-.section-TXT {
-  color: var(--color-primary-dark);
-  font-size: 2rem;
-  padding-bottom: 10px;
-  margin-bottom: 35px;
-  position: relative;
-  font-weight: 700;
-}
-
-.section-TXT::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 10%;
-  height: 4px;
-  background-color: var(--color-secondary);
-  border-radius: 2px;
-}
-.reports-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-}
-
-.report-column {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.report-item {
-  background-color: var(--color-white);
-  padding: 15px 20px;
-  border-radius: 8px;
-  text-align: center;
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: var(--color-primary-dark);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  border-right: 4px solid var(--color-primary);
-  position: relative;
-}
-
-.report-item:hover {
-  background-color: var(--color-primary);
-  color: var(--color-white);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  border-right-color: var(--color-secondary);
-  transform: translateY(-3px);
-}
-
-.report-item.status-missing {
-  background-color: var(--color-white);
-  color: #95a5a6;
-  border-right-color: var(--color-error);
-  pointer-events: none;
-}
-
-.status-badge {
-  position: absolute;
-  top: -10px;
-  left: 10px;
-  background-color: var(--color-error);
-  color: var(--color-white);
-  font-size: 0.75rem;
-  padding: 3px 8px;
-  border-radius: 4px;
-}
-.special-issues {
-  margin-bottom: 60px;
-}
-.special-issues-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 25px;
-  justify-content: center;
-}
-
-.issue-card {
-  background-color: var(--color-white);
-  padding: 25px;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-  width: 100%;
-  max-width: 350px;
-  text-align: center;
-  border-top: 5px solid var(--color-secondary);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.issue-title {
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: var(--color-primary-dark);
-  margin-bottom: 20px;
-}
-
-.issue-title i {
-  color: var(--color-secondary);
-  margin-left: 10px;
-  font-size: 1.3rem;
-}
-
-.download-link {
-  display: inline-block;
-  background-color: var(--color-secondary);
-  color: var(--color-primary-dark);
-  padding: 10px 25px;
-  border-radius: 25px;
-  font-weight: 700;
-  transition: background-color var(--transition-speed);
-}
-
-.download-link:hover {
-  background-color: var(--color-primary-dark);
-  color: var(--color-secondary);
-  transform: translateY(-2px);
-}
-
-.divider {
-  border: none;
-  border-top: 2px solid #ddd;
-  margin: 50px 0;
-  width: 70%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* --- Responsiveness --- */
-
-@media (max-width: 992px) {
-  .reports-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 576px) {
-  header h1 {
-    font-size: 1.8rem;
-  }
-
-  .section-TXT {
-    font-size: 1.5rem;
-  }
-
-  .reports-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .report-item {
-    font-size: 1rem;
-    padding: 12px 15px;
-  }
-
-  .issue-card {
-    max-width: 100%;
   }
 }

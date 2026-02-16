@@ -1,16 +1,12 @@
 :root {
-  /* الألوان */
   --secondary-color: #bd9d6c;
   --primary-dark-color: #0b2545;
-
   --text-color: #333;
   --background-color: #edeff1;
   --border-color: #dee2e6;
-  /* الخطوط */
   --main-font: "Arial", sans-serif;
   --heading-font-size: 1.7rem;
   --body-font-size: 1rem;
-  /* التباعد */
   --spacing-large: 3rem;
   --spacing-medium: 1.5rem;
   --spacing-small: 0.5rem;

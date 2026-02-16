@@ -114,7 +114,6 @@
 
 p {
   margin-bottom: 15px;
-  text-align: justify;
   font-weight: bold;
 }
 ol {
@@ -142,17 +141,49 @@ strong {
 /* Responsive */
 @media (max-width: 768px) {
   .department-section {
-  text-align: right;
+    text-align: center;
+    padding: 20px 10px;
   }
+  
+  .department-section .container {
+    padding: 20px 15px;
+    margin: 15px auto;
+  }
+  
   .department-section .container .title {
-text-align: right;  
+    text-align: center;
     font-size: 1.2rem;
+    display: block;
+    width: 100%;
   }
+  
+  .department-section .container p {
+    text-align: center;
+    padding: 0 10px;
+  }
+  
+  .department-section .container ul {
+    text-align: center;
+    padding: 0;
+  }
+  
+  .department-section .container ul li {
+    text-align: center;
+  }
+  
   p,
   ul li {
     font-size: 1rem;
   }
+  
   .foot-page {
     grid-template-columns: repeat(2, 1fr);
+    margin: 20px 10px;
+    gap: 10px;
+  }
+  
+  .foot-page a {
+    text-align: center;
+    padding: 12px 10px;
   }
 }

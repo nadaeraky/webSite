@@ -950,7 +950,7 @@
 
 .statistics-section th {
   background-color: var(--primary-color);
-  color: #fff;
+  color: var(--color-primary-dark);
   font-weight: 600;
 }
 
