@@ -14,11 +14,11 @@
   margin: 0;
   padding: 0;
 }
-html, body {
-  overflow-x: hidden; 
+html,
+body {
+  overflow-x: hidden;
   width: 100%;
 }
-
 
 body {
   font-family: var(--font-family-cairo);
@@ -34,7 +34,6 @@ a {
   transition: color var(--transition-speed);
 }
 
-/* Page Title Style */
 .page-title {
   font-size: 2.5rem;
   color: var(--color-primary-dark);
@@ -114,7 +113,6 @@ a {
   text-decoration: underline;
 }
 
-/* Divider */
 .researcher-divider {
   border: none;
   border-top: 1px solid #ddd;
@@ -143,7 +141,7 @@ a {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
 }
-.photo-album{
+.photo-album {
   margin-bottom: 30px;
 }
 .gallery-item {
@@ -208,8 +206,8 @@ a {
     margin-bottom: 20px;
   }
 }
-/* مؤتمر دولي */
 
+/* مؤتمر دولي */
 .conference-item {
   background-color: var(--color-white);
   padding: 30px;
@@ -217,7 +215,8 @@ a {
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
   margin-bottom: 50px;
   border-right: 5px solid var(--color-primary);
-  transition: transform var(--transition-speed) ease,
+  transition:
+    transform var(--transition-speed) ease,
     box-shadow var(--transition-speed) ease;
 }
 
@@ -295,7 +294,7 @@ a {
 }
 
 /* مؤتمر علمي */
-.department-conferences{
+.department-conferences {
   margin-bottom: 50px;
 }
 .department-list {
@@ -351,7 +350,7 @@ a {
   .main-divider {
     margin: 50px 0 40px 0;
   }
-  .logo-text{
+  .logo-text {
     font-size: 1.2rem;
   }
 }

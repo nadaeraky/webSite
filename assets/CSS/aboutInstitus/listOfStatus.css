@@ -146,9 +146,9 @@
     padding: 0 15px;
     gap: 20px;
   }
-.list-study a {
-  font-size: 0.9rem;
-}
+  .list-study a {
+    font-size: 0.9rem;
+  }
   .body-section,
   .massage-of-status,
   .system-of-study,

@@ -6,7 +6,7 @@ if (mobileMenuBtn && mobileNav) {
     mobileNav.classList.toggle("active");
     document.body.classList.toggle(
       "no-scroll",
-      mobileNav.classList.contains("active")
+      mobileNav.classList.contains("active"),
     );
   });
 }

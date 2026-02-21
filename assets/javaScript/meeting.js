@@ -9,7 +9,7 @@ const observer = new IntersectionObserver(
   },
   {
     threshold: 0.1,
-  }
+  },
 );
 
 document.querySelectorAll(".animate-on-scroll").forEach((element) => {

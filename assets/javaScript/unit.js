@@ -20,9 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// صفحة ملتقي الخريجين*****
+// صفحة ملتقي الخريجين
     document.addEventListener('DOMContentLoaded', () => {
-        // تحديد العناصر التي سيتم تطبيق حركة التمرير عليها
         const elements = document.querySelectorAll('[data-animate="fade-in"], [data-animate="fade-in-list"]');
 
         const observer = new IntersectionObserver((entries) => {
@@ -40,8 +39,8 @@ document.addEventListener('DOMContentLoaded', () => {
             observer.observe(element);
         });
     });
-// الخريجين المتميزين
 
+// الخريجين المتميزين
 document.addEventListener('DOMContentLoaded', () => {
     const sections = document.querySelectorAll('.fade-in');
 
