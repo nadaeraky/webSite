@@ -148,11 +148,13 @@ body {
   margin-bottom: 5px;
   font-size: 1.1rem;
 }
-
-.footnote {
+.planTraning {
   text-align: center;
   margin-top: 30px;
   padding: 10px 0;
+}
+.footnote {
+  font-weight: bold;
   font-style: italic;
   color: var(--primary-color);
   border-top: 1px dashed var(--light-gray);
