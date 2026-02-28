@@ -3,10 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="../assets/image/logo.jpeg" />
+    <title>المؤتمر العلمي السنوي</title>
     <link rel="stylesheet" href="../assets/CSS/style.css" />
     <link
       rel="stylesheet"
-      href="../assets/CSS/sectionsStyle/meetingSearch.css"
+      href="../assets/CSS/searchSection/meetingSearch.css"
     />
     <link
       rel="stylesheet"
@@ -20,8 +22,10 @@
       href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <title>قسم الهندسة المدنية</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <!-- Header -->
@@ -58,7 +62,6 @@
           </div>
         </div>
       </div>
-
       <div class="header-main">
         <div class="container">
           <div class="nav-wrapper">
@@ -513,182 +516,332 @@
       </ul>
     </nav>
     <!-- end header -->
-
+    <!-- section -->
     <main class="conference-page">
-      <!---------------------------------------- 2022 -------------------------------------------------->
       <section class="hero">
-        <h1 class="animate-on-scroll">
-          المؤتمر العلمي السنوي لقسم العلوم الهندسة المدنية
+        <h1 class="animate-on-scroll title-page">
+          المؤتمر العلمي السنوي لقسم الهندسة المدنية
         </h1>
-        <p class="animate-on-scroll">للعام الجامعي: 2022-2023</p>
+        <p class="animate-on-scroll">للعام الجامعي: 2024/2023</p>
         <p class="animate-on-scroll location-time">
-          تم عقد المؤتمر العلمي السنوي في: *6/03/2023* - الساعة **الواحدة
-          ظهرًا**
+          تم عقد المؤتمر العلمي السنوي لقسم الهندسة المدنية للعام الجامعي
+          2023/2022 في يوم الإثنين الموافق 06/03/2023 بمدرج (1) بالمعهد في تمام
+          الساعة الواحدة ظهرا
         </p>
       </section>
-      <!-- حضور و مشاركين -->
-      <section class="committee-members animate-on-scroll">
-        <h2 class="title-meet animate-on-scroll">الحضور والمشاركون</h2>
+
+      <section class="committee-members">
+        <h3 class="animate-on-scroll title-meet">حضور المؤتمر</h3>
         <div class="members-grid">
           <div class="member-card animate-on-scroll">
-            <p><strong>1 - أ.د/ أوسام راجح:</strong> عميد المعهد</p>
+            <strong> أ.د. أوسامي راجح </strong>
+            <span>عميد المعهد</span>
           </div>
           <div class="member-card animate-on-scroll">
-            <p>
-              <strong>2 - أ.د/ خالد سمير:</strong> وكيل المعهد لشئون التعليم
-              والطلاب
-            </p>
+            <strong> أ.د. خالد سمير</strong>
+            <span>وكيل المعهد لشئون التعليم والطلاب</span>
           </div>
           <div class="member-card animate-on-scroll">
-            <p>
-              <strong>3 - أ.د. محمد الكيكي </strong> رئيس مجلس قسم الهندسة
-              المدنية
-            </p>
+            <strong>أ.د. محمد الكيكي </strong>
+            <span> رئيس مجلس قسم الهندسة المدنيـة</span>
           </div>
           <div class="member-card animate-on-scroll">
-            <p>
-              <strong>4 - أ.م.د/ هند جادو:</strong> رئيس مجلس قسم الهندسة
-              المعمارية
-            </p>
+            <strong>أ.م.د. هند جادو</strong>
+            <span>رئيس مجلس قسم الهندسة الكيميائية</span>
           </div>
           <div class="member-card animate-on-scroll">
-            <p>
-              <strong>5 - د/ أميرة السنباطي :</strong> قائم بعمل رئيس مجلس قسم
-              الهندسة الإلكترونية والاتصالات
-            </p>
+            <strong> د. أميرة السنباطي </strong>
+            <span> قائم بعمل رئيس مجلس قسم هندسة الإتصالات والإلكترونيات</span>
           </div>
           <div class="member-card animate-on-scroll">
-            <p>
-              <strong>6 - أ.م.د/ أمل بحيري:</strong> رئيس مجلس قسم العلوم
-              الأساسية
-            </p>
+            <strong> أ.م.د. أمل بحيـري </strong>
+            <span> رئيس مجلس قسم العلوم الأساسية</span>
           </div>
           <div class="member-card animate-on-scroll">
-            <p>
-              <strong>7 - أ.م.د/ رمضان الكاتب:</strong> مدير وحدة ضمان الجودة
-              بالمعهد
-            </p>
+            <strong> أ.م.د. رمضـان الكاتب </strong>
+            <span> مدير وحدة ضمان الجودة بالمعهد</span>
           </div>
           <div class="member-card animate-on-scroll">
-            <p>
-              <strong
-                >8 - السادة أعضاء هيئة التدريس وأعضاء الهيئة المعاونة بقسم
-                الهندسة المدنية.</strong
-              >
-            </p>
+            <strong
+              >السادة أعضاء هيئة التدريس وأعضاء الهيئة المعاونة بقسم الهندسة
+              المدنية.</strong
+            >
+          </div>
+
+          <div class="member-card animate-on-scroll">
+            <strong>
+              السادة أعضاء هيئة التدريس وأعضاء الهيئة المعاونة بالمعهد.
+            </strong>
           </div>
           <div class="member-card animate-on-scroll">
-            <p>
-              <strong
-                >9 - السادة أعضاء هيئة التدريس وأعضاء الهيئة المعاونة
-                بالمعهد.</strong
-              >
-            </p>
-          </div>
-          <div class="member-card animate-on-scroll">
-            <p><strong>10 - طلاب وخريجي قسم الهندسة المدنية.</strong></p>
+            <strong>طلاب وخريجي قسم الهندسة المدنية.</strong>
           </div>
         </div>
       </section>
-      <!-- جدول اعمال المؤتمر -->
+
       <section class="agenda">
-        <h2 class="animate-on-scroll title-meet">جدول أعمال المؤتمر</h2>
+        <h3 class="animate-on-scroll title-meet">فعاليات المؤتمر</h3>
         <ol class="agenda-list">
+          <li class="animate-on-scroll">إفتتاح المؤتمر والسلام الوطني.</li>
           <li class="animate-on-scroll">
-            <strong>إفتتاح المؤتمر:</strong> بالسلام الوطني.
+            تلاوة عطرة من آيات الذكر الحكيم مع الطالب / أحمد السويركي.
+          </li>
+          <li class="animate-on-scroll">
+            كلمة إفتتاحية مع أ.د. أوسامي راجح - عميد المعهد.
+          </li>
+          <li class="animate-on-scroll">
+            كلمة أ.د. محمد السيد جبر - رئيس مجلس قسم الهندسة المدنية،
+            والترحيبكلمة أ.د. محمد الكيكي - رئيس مجلس قسم الهندسة المدنية،
+            والترحيب بالسادة الحضور وعرض ملخص للنظم التدريسية الحالية وهما
+            لائحتي الساعات المعتمدة والفصول الدراسية وشرح سيادته المطلوب لإتمام
+            العمل في تجهيز اللائحة الدراسية الجديدة بنظام الساعات المعتمدة طبقاً
+            لتعليمات الوزارة وفتح باب المناقشة في هذه الموضوعات.
+          </li>
+        </ol>
+      </section>
+
+      <section class="technical-topics">
+        <h3 class="animate-on-scroll title-meet">بعض العروض التقديمية</h3>
+        <ul class="topics-list">
+          <li class="animate-on-scroll">
+            أولاً: عرض تقديمي للتعريف بقسم الهندسة المدنية مع د. هاني حشيش.
+          </li>
+          <li class="animate-on-scroll">
+            ثانياً: عرض تقديمي بعنوان "منهجية تصميم نظام معالجة مياة الصرف الصحي
+            يتألف من خزان إيمهوف والأراضي الرطبة ذات التدفق الجوفي - دراسة حالة
+            واحة الداخلة مصر" مع أ.م.د محمد جبر.
+          </li>
+          <li class="animate-on-scroll">
+            ثالثاً: عرض تقديمي بعنوان "إستغلال المياة الجوفية للصحراء الغربية
+            والتحديات – دراسة حالة مشروع 1.5 مليون فدان" مع أ.م.د محمد جبر.
+          </li>
+          <li class="animate-on-scroll">
+            رابعاً: محاضرة بعنوان "المهندس المتميز وسوق العمل" مع ضيفة المؤتمر
+            م. هدى سعد - مدير الإدارة الفنية بهيئة الأبنية التعليمية بمحافظة
+            دمياط، وقد تم تكريم سيادتها من الأستاذ الدكتور عميد المعهد.
           </li>
           <li>
-            <strong>ندوة:</strong>تلاوة عطرة من آيات الذكر الحكيم مع الطالب /
-            أحمد السوركي.
+            خامساً: عرض تقديمي لطلاب مشروع تخرج تخصص (هندسة الأساسات) 2022/2023.
+          </li>
+          <li>
+            سادساً: عرض تقديمي لطلاب مشروع تخرج تخصص (الهندسة الصحية) 2022/2023.
+          </li>
+          <li>
+            سابعاً: عرض تقديمي لرسالة ماجستير لأحد خريجي قسم الهندسة المدنية
+            بعنوان "معالجة مياة الصرف الزراعي بإستخدام نظام الأراضي الرطبة
+            العائمة" مع م. مادلين سالم.
+          </li>
+          <li>
+            ثامناً: محاضرة بعنوان "أساليب التخطيط في مشروعات التشييد" مع د. حمدي
+            عبدالعاطي.
+          </li>
+          <li>
+            تاسعاً: محاضرة بعنوان "الخرسانة المدعمة بالألياف" مع د. نسرين
+            العوادلي.
+          </li>
+        </ul>
+      </section>
+
+      <section class="technical-topics">
+        <h3 class="animate-on-scroll title-meet">توصيات المؤتمر</h3>
+        <ul class="topics-list">
+          <li class="animate-on-scroll">
+            عمل لقاءات طلابية إضافية مع السادة أعضاء هيئة التدريس والسادة أعضاء
+            الهيئة المعاونة بصفه دورية على مدار العام الدراسي على أن تكون مرتين
+            كل فصل دراسي وذلك لعرض ودراسة المشكلات الأكاديمية للطلاب وإيجاد
+            الحلول المناسبة لها.
           </li>
           <li class="animate-on-scroll">
-            <strong>كلمة:</strong> إفتتاحية مع أ.د/ أوسامي راجح، عميد المعهد.
+            حث السادة أعضاء هيئة التدريس وأعضاء الهيئة المعاونة على المشاركة في
+            المؤتمرات العلمية المحلية أو الدولية في مجال التخصص سواء بالمشاركة
+            بأبحاث أو بوسترات أو الحضور.
           </li>
           <li class="animate-on-scroll">
-            <strong>كلمة:</strong>
-            أ.د. محمد الكيكي - رئيس مجلس قسم الهندسة المدنية، والترحيب بالسادة
-            الحضور وعرض ملخص للنظم التدريسية الحالية وهما لائحتي الساعات
+            حسين كفاءة المعامل والعمل على زيادة الأجهزة وتحديثها.
+          </li>
+          <li class="animate-on-scroll">
+            تحسين كفاءة المعامل والعمل على زيادة الأجهزة وتحديثها.
+          </li>
+          <li class="animate-on-scroll">
+            عمل بروتوكولات تعاون مع كليات الهندسة بالجامعات القريبة من
+            المعهدالعمل على زيادة الرحلات العلمية والزيارات الميدانية لزيادة
+            تفاعل الطلاب مع سوق العمل.
+          </li>
+          <li>
+            عمل بروتوكولات تعاون مع كليات الهندسة بالجامعات القريبة من المعهد
+            للإستفادة من الخبرات والإمكانيات الموجودة بها لخدمة العملية
+            التعليمية بالقسم سواء لدرجة البكالوريوس أو مرحلة الدراسات العليا.
+          </li>
+        </ul>
+      </section>
+
+      <section class="gallery">
+        <h3 class="animate-on-scroll title-meet">صور من المؤتمر</h3>
+        <div class="gallery-grid">
+          <div class="animate-on-scroll">
+            <img
+              src="../assets/image/leaderSpecia2.jpg"
+              alt="مؤتمر علمي  مدني"
+            />
+          </div>
+
+          <div class="animate-on-scroll">
+            <img
+              src="../assets/image/leaderSpecia1.jpg"
+              alt="مؤتمر علمي  مدني"
+            />
+          </div>
+
+          <div class="animate-on-scroll">
+            <img
+              src="../assets/image/leaderSpecia4.jpg"
+              alt="مؤتمر علمي  مدني"
+            />
+          </div>
+          <div class="animate-on-scroll">
+            <img
+              src="../assets/image/leaderSpecia5.jpg"
+              alt="مؤتمر علمي  مدني"
+            />
+          </div>
+          <div class="animate-on-scroll">
+            <img
+              src="../assets/image/leaderSpecia6.jpg"
+              alt="مؤتمر علمي  مدني"
+            />
+          </div>
+          <div class="animate-on-scroll">
+            <img
+              src="../assets/image/leaderSpecial7.jpg"
+              alt="مؤتمر علمي  مدني"
+            />
+          </div>
+        </div>
+      </section>
+      <!--  -->
+      <section class="hero">
+        <h1 class="animate-on-scroll title-page">
+          المؤتمر العلمي السنوي لقسم الهندسة المدنية
+        </h1>
+        <p class="animate-on-scroll">للعام الجامعي: 2025/2024</p>
+        <p class="animate-on-scroll location-time">
+          تم عقد المؤتمر العلمي السنوي لقسم الهندسة المدنية للعام الجامعي
+          2025/2024 في يوم الإثنين الموافق 17/03/2025 بمدرج (1) بالمعهد في تمام
+          الساعة الواحدة ظهرا :
+        </p>
+      </section>
+
+      <section class="committee-members">
+        <h3 class="animate-on-scroll title-meet">حضور المؤتمر</h3>
+        <div class="members-grid">
+          <div class="member-card animate-on-scroll">
+            <strong> أ.د. أوسامي راجح </strong>
+            <span>عميد المعهد</span>
+          </div>
+          <div class="member-card animate-on-scroll">
+            <strong> أ.د. خالد سمير</strong>
+            <span>وكيل المعهد لشئون التعليم والطلاب</span>
+          </div>
+          <div class="member-card animate-on-scroll">
+            <strong>أ.د. محمد السيد جبر </strong>
+            <span> رئيس مجلس قسم الهندسة المدنيـة</span>
+          </div>
+          <div class="member-card animate-on-scroll">
+            <strong>أ.م.د. هند جادو</strong>
+            <span>رئيس مجلس قسم الهندسة الكيميائية</span>
+          </div>
+          <div class="member-card animate-on-scroll">
+            <strong> د. أميرة السنباطي </strong>
+            <span> قائم بعمل رئيس مجلس قسم هندسة الإتصالات والإلكترونيات</span>
+          </div>
+          <div class="member-card animate-on-scroll">
+            <strong> أ.م.د. أمل بحيـري </strong>
+            <span> رئيس مجلس قسم العلوم الأساسية</span>
+          </div>
+          <div class="member-card animate-on-scroll">
+            <strong> أ.م.د. رمضـان الكاتب </strong>
+            <span> مدير وحدة ضمان الجودة بالمعهد</span>
+          </div>
+          <div class="member-card animate-on-scroll">
+            <strong
+              >السادة أعضاء هيئة التدريس وأعضاء الهيئة المعاونة بقسم الهندسة
+              المدنية.</strong
+            >
+          </div>
+
+          <div class="member-card animate-on-scroll">
+            <strong>
+              السادة أعضاء هيئة التدريس وأعضاء الهيئة المعاونة بالمعهد.
+            </strong>
+          </div>
+          <div class="member-card animate-on-scroll">
+            <strong>طلاب وخريجي قسم الهندسة المدنية.</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="agenda">
+        <h3 class="animate-on-scroll title-meet">فعاليات المؤتمر</h3>
+        <ol class="agenda-list">
+          <li class="animate-on-scroll">إفتتاح المؤتمر والسلام الوطني.</li>
+          <li class="animate-on-scroll">
+            تلاوة عطرة من آيات الذكر الحكيم مع الطالب / أحمد السويركي.
+          </li>
+          <li class="animate-on-scroll">
+            كلمة إفتتاحية مع أ.د. أوسامي راجح - عميد المعهد.
+          </li>
+          <li class="animate-on-scroll">
+            كلمة أ.د. محمد السيد جبر - رئيس مجلس قسم الهندسة المدنية، والترحيب
+            بالسادة الحضور وعرض ملخص للنظم التدريسية الحالية وهما لائحتي الساعات
             المعتمدة والفصول الدراسية وشرح سيادته المطلوب لإتمام العمل في تجهيز
             اللائحة الدراسية الجديدة بنظام الساعات المعتمدة طبقاً لتعليمات
             الوزارة وفتح باب المناقشة في هذه الموضوعات.
           </li>
-          <li class="animate-on-scroll">
-            <strong>وتم عرض الموضوعات الأتية:</strong>
-          </li>
         </ol>
+      </section>
 
-        <ul class="posters-list">
-          <li>
-            <strong> أولاً:</strong> عرض تقديمي للتعريف بقسم الهندسة المدنية مع
-            د. هاني حشيش.
+      <section class="technical-topics">
+        <h3 class="animate-on-scroll title-meet">بعض العروض التقديمية</h3>
+        <ul class="topics-list">
+          <li class="animate-on-scroll">
+            أولاً: كلمة رئيس قسم الهندسه المدنية مع أ.د محمد السيد جبر
           </li>
-          <li>
-            <strong> ثانياً:</strong> عرض تقديمي بعنوان "منهجية تصميم نظام
-            معالجة مياة الصرف الصحي يتألف من خزان إيمهوف والأراضي الرطبة ذات
-            التدفق الجوفي - دراسة حالة واحة الداخلة مصر" مع أ.م.د محمد جبر.
+          <li class="animate-on-scroll">
+            ثانياً: عرض تقديمي يبرز أهمية قسم الهندسة المدنية مع د هاني حشيش.
           </li>
-
-          <li>
-            <strong> ثالثاً:</strong> عرض تقديمي بعنوان "إستغلال المياة الجوفية
-            للصحراء الغربية والتحديات – دراسة حالة مشروع 1.5 مليون فدان" مع
-            أ.م.د محمد جبر.
+          <li class="animate-on-scroll">
+            ثالثاً: تكريم السادة من أعضاء هيئة التدريس والهيئة المعاونة الحاصلين
+            على درجة الماجستير والدكتوراة والحاصلين على ترقيات وكذلك تكريم
+            الموظفين المتميزين بالقسم
           </li>
-
-          <li>
-            <strong> رابعاً:</strong> محاضرة بعنوان "المهندس المتميز وسوق العمل"
-            مع ضيفة المؤتمر م. هدى سعد - مدير الإدارة الفنية بهيئة الأبنية
-            التعليمية بمحافظة دمياط، وقد تم تكريم سيادتها من الأستاذ الدكتور
-            عميد المعهد.
-          </li>
-
-          <li>
-            <strong> خامساً:</strong> عرض تقديمي لطلاب مشروع تخرج تخصص (هندسة
-            الأساسات) 2022/2023.
-          </li>
-
-          <li>
-            <strong> سادساً:</strong> عرض تقديمي لطلاب مشروع تخرج تخصص (الهندسة
-            الصحية) 2022/2023.
-          </li>
-
-          <li>
-            <strong> سابعاً:</strong> عرض تقديمي لرسالة ماجستير لأحد خريجي قسم
-            الهندسة المدنية بعنوان "معالجة مياة الصرف الزراعي بإستخدام نظام
-            الأراضي الرطبة العائمة" مع م. مادلين سالم.
-          </li>
-
-          <li>
-            <strong> ثامناً:</strong> محاضرة بعنوان "أساليب التخطيط في مشروعات
-            التشييد" مع د. حمدي عبدالعاطي.
-          </li>
-
-          <li>
-            <strong> تاسعاً:</strong> محاضرة بعنوان "الخرسانة المدعمة بالألياف"
-            مع د. نسرين العوادلي.
+          <li class="animate-on-scroll">
+            رابعاً: عرض تقديمي لمشروعات تخرج عام 2023-2024.
           </li>
         </ul>
       </section>
-      <!-- توصيات -->
-      <section class="agenda">
-        <h2 class="animate-on-scroll title-meet">توصيات المؤتمر</h2>
-        <ul class="posters-list">
-          <li>
+
+      <section class="technical-topics">
+        <h3 class="animate-on-scroll title-meet">توصيات المؤتمر</h3>
+        <ul class="topics-list">
+          <li class="animate-on-scroll">
             عمل لقاءات طلابية إضافية مع السادة أعضاء هيئة التدريس والسادة أعضاء
             الهيئة المعاونة بصفه دورية على مدار العام الدراسي على أن تكون مرتين
             كل فصل دراسي وذلك لعرض ودراسة المشكلات الأكاديمية للطلاب وإيجاد
             الحلول المناسبة لها.
           </li>
-          <li>
+          <li class="animate-on-scroll">
             حث السادة أعضاء هيئة التدريس وأعضاء الهيئة المعاونة على المشاركة في
             المؤتمرات العلمية المحلية أو الدولية في مجال التخصص سواء بالمشاركة
             بأبحاث أو بوسترات أو الحضور.
           </li>
-          <li>تحسين كفاءة المعامل والعمل على زيادة الأجهزة وتحديثها.</li>
-          <li>
+          <li class="animate-on-scroll">
+            حسين كفاءة المعامل والعمل على زيادة الأجهزة وتحديثها.
+          </li>
+          <li class="animate-on-scroll">
             العمل على زيادة الرحلات العلمية والزيارات الميدانية لزيادة تفاعل
             الطلاب مع سوق العمل.
           </li>
-          <li>
+          <li class="animate-on-scroll">
             عمل بروتوكولات تعاون مع كليات الهندسة بالجامعات القريبة من المعهد
             للإستفادة من الخبرات والإمكانيات الموجودة بها لخدمة العملية
             التعليمية بالقسم سواء لدرجة البكالوريوس أو مرحلة الدراسات العليا.
@@ -696,153 +849,30 @@
         </ul>
       </section>
 
-      <!---------------------------------------- 2024 ------------------------------------------------->
-      <section class="hero">
-        <h1 class="animate-on-scroll">
-          المؤتمر العلمي السنوي لقسم العلوم الهندسة المدنية
-        </h1>
-        <p class="animate-on-scroll">للعام الجامعي: 2024-2025/</p>
-        <p class="animate-on-scroll location-time">
-          تم عقد المؤتمر العلمي السنوي في: *17/03/2025* - الساعة الواحدة ظهرًا
-        </p>
-      </section>
+      <section class="gallery">
+        <h3 class="animate-on-scroll title-meet">صور من المؤتمر</h3>
+        <div class="gallery-grid">
+          <div class="animate-on-scroll">
+            <img
+              src="../assets/image/1مؤتمر علمي مدني.png  "
+              alt="مؤتمر علمي  مدني"
+            />
+          </div>
 
-      <section class="committee-members animate-on-scroll">
-        <h2 class="title-meet animate-on-scroll">الحضور والمشاركون</h2>
-        <div class="members-grid">
-          <div class="member-card animate-on-scroll">
-            <p><strong>1 - أ.د/ أوسام راجح:</strong> عميد المعهد</p>
+          <div class="animate-on-scroll">
+            <img
+              src="../assets/image/مؤتمر علمي مدني2.png "
+              alt="مؤتمر علمي  مدني"
+            />
           </div>
-          <div class="member-card animate-on-scroll">
-            <p>
-              <strong>2 - أ.د/ خالد سمير:</strong> وكيل المعهد لشئون التعليم
-              والطلاب
-            </p>
-          </div>
-          <div class="member-card animate-on-scroll">
-            <p>
-              <strong>3 - أ.د/ محمد السيد جبر:</strong> رئيس مجلس قسم الهندسة
-              المدنية
-            </p>
-          </div>
-          <div class="member-card animate-on-scroll">
-            <p>
-              <strong>4 - أ.م.د/ هند جادو:</strong> رئيس مجلس قسم الهندسة
-              المعمارية
-            </p>
-          </div>
-          <div class="member-card animate-on-scroll">
-            <p>
-              <strong>5 - د/ أميرة السنباطي :</strong> قائم بعمل رئيس مجلس قسم
-              الهندسة الإلكترونية والاتصالات
-            </p>
-          </div>
-          <div class="member-card animate-on-scroll">
-            <p>
-              <strong>6 - أ.م.د/ أمل بحيري:</strong> رئيس مجلس قسم العلوم
-              الأساسية
-            </p>
-          </div>
-          <div class="member-card animate-on-scroll">
-            <p>
-              <strong>7 - أ.م.د/ رمضان الكاتب:</strong> مدير وحدة ضمان الجودة
-              بالمعهد
-            </p>
-          </div>
-          <div class="member-card animate-on-scroll">
-            <p>
-              <strong
-                >8 - السادة أعضاء هيئة التدريس وأعضاء الهيئة المعاونة بقسم
-                الهندسة المدنية.</strong
-              >
-            </p>
-          </div>
-          <div class="member-card animate-on-scroll">
-            <p>
-              <strong
-                >9 - السادة أعضاء هيئة التدريس وأعضاء الهيئة المعاونة
-                بالمعهد.</strong
-              >
-            </p>
-          </div>
-          <div class="member-card animate-on-scroll">
-            <p><strong>10 - طلاب وخريجي قسم الهندسة المدنية.</strong></p>
+
+          <div class="animate-on-scroll">
+            <img
+              src="../assets/image/مؤتمر علمي مدني3.png"
+              alt="مؤتمر علمي  مدني"
+            />
           </div>
         </div>
-      </section>
-
-      <section class="agenda animate-on-scroll">
-        <h2 class="animate-on-scroll title-meet">جدول أعمال المؤتمر</h2>
-        <ol class="agenda-list">
-          <li><strong>إفتتاح المؤتمر:</strong> بالسلام الوطني.</li>
-          <li>
-            <strong>ندوة:</strong>تلاوة عطرة من آيات الذكر الحكيم مع الطالب /
-            أحمد السوركي.
-          </li>
-          <li>
-            <strong>كلمة:</strong> إفتتاحية مع أ.د/ أوسامي راجح، عميد المعهد.
-          </li>
-          <li>
-            <strong>كلمة:</strong> أ.د/ محمد السيد جبر رئيس مجلس قسم الهندسة
-            المدنية. رئيس مجلس قسم الهندسة المدنية، والترحيب بالسادة الحضور وعرض
-            ملخص للنظم التدريسية الحالية وهما لائحتي الساعات المعتمدة والفصول
-            الدراسية وشرح سيادته المطلوب لإتمام العمل في تجهيز اللائحة الدراسية
-            الجديدة بنظام الساعات المعتمدة طبقاً لتعليمات الوزارة وفتح باب
-            المناقشة في هذه الموضوعات.
-          </li>
-
-          <li class="animate-on-scroll">
-            <strong>وتم عرض الموضوعات الأتية:</strong>
-          </li>
-        </ol>
-
-        <ul class="posters-list">
-          <li>
-            <strong> أولاً:</strong>كلمة رئيس قسم الهندسه المدنية مع أ.د محمد
-            السيد جبر
-          </li>
-          <li>
-            <strong> ثانياً:</strong> عرض تقديمي يبرز أهمية قسم الهندسة المدنية
-            مع د هاني حشيش.
-          </li>
-
-          <li>
-            <strong> ثالثاً:</strong> تكريم السادة من أعضاء هيئة التدريس والهيئة
-            المعاونة الحاصلين على درجة الماجستير والدكتوراة والحاصلين على ترقيات
-            وكذلك تكريم الموظفين المتميزين بالقسم
-          </li>
-
-          <li>
-            <strong> رابعاً:</strong> عرض تقديمي لمشروعات تخرج عام 2023-2024.
-          </li>
-        </ul>
-      </section>
-
-      <section class="agenda">
-        <h2 class="animate-on-scroll title-meet">توصيات المؤتمر</h2>
-        <ul class="posters-list">
-          <li>
-            عمل لقاءات طلابية إضافية مع السادة أعضاء هيئة التدريس والسادة أعضاء
-            الهيئة المعاونة بصفه دورية على مدار العام الدراسي على أن تكون مرتين
-            كل فصل دراسي وذلك لعرض ودراسة المشكلات الأكاديمية للطلاب وإيجاد
-            الحلول المناسبة لها.
-          </li>
-          <li>
-            حث السادة أعضاء هيئة التدريس وأعضاء الهيئة المعاونة على المشاركة في
-            المؤتمرات العلمية المحلية أو الدولية في مجال التخصص سواء بالمشاركة
-            بأبحاث أو بوسترات أو الحضور.
-          </li>
-          <li>تحسين كفاءة المعامل والعمل على زيادة الأجهزة وتحديثها. .</li>
-          <li>
-            العمل على زيادة الرحلات العلمية والزيارات الميدانية لزيادة تفاعل
-            الطلاب مع سوق العمل.
-          </li>
-          <li>
-            عمل بروتوكولات تعاون مع كليات الهندسة بالجامعات القريبة من المعهد
-            للإستفادة من الخبرات والإمكانيات الموجودة بها لخدمة العملية
-            التعليمية بالقسم سواء لدرجة البكالوريوس أو مرحلة الدراسات العليا.
-          </li>
-        </ul>
       </section>
     </main>
 
@@ -980,7 +1010,8 @@
         <i class="fas fa-arrow-up"></i>
       </a>
     </footer>
-    <script src="../assets/javaScript/main.js"></script>
+    <script src="../assets/javaScript/responsive.js"></script>
     <script src="../assets/javaScript/meeting.js"></script>
+    <script src="../assets/javaScript/main.js"></script>
   </body>
 </html>
