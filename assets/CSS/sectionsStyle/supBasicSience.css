@@ -7,8 +7,8 @@
   --color-primary: #1a237e;
   --color-primary-light: #3949ab;
   --color-primary-dark: #0d1642;
-  --color-secondary:  #bd9d6c;;
-  --color-secondary-light: #fbbf24;
+  --color-secondary: #bd9d6c;
+  --color-secondary-light: #3b2d07;
   --color-accent: #6366f1;
   --color-text-dark: #1f2937;
   --color-text-medium: #4b5563;
@@ -779,8 +779,14 @@ tbody tr:hover {
   .section-divider {
     margin: 40px 0;
   }
+  .lap-par{
+  font-size: 12px;
 }
-
+}
+.lap-par{
+  color: #1f2937;
+  font-weight: 600;
+}
 @media (max-width: 480px) {
   .section-main-title {
     font-size: 1.8rem;
@@ -1101,14 +1107,13 @@ section:last-of-type {
   height: 3px;
   background-color: var(--color-secondary);
 }
-.sup-title{
+.sup-title {
   font-weight: bold;
   color: var(--color-secondary);
   cursor: pointer;
   margin-bottom: 25px;
-
 }
-.sup-title:hover{
+.sup-title:hover {
   text-decoration: underline;
 }
 .sup-txt {
@@ -1416,7 +1421,7 @@ section:last-of-type {
   .section-title {
     font-size: 2rem;
   }
-  .f-title {
+  .f-section {
     margin-top: 55px;
   }
   .activity-subtitle {
@@ -1426,6 +1431,20 @@ section:last-of-type {
   .large-gallery-grid {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   }
+  .as_par {
+    width: 100% !important;
+  }
+  .cont {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .section-flex{
+    flex-direction: column;
+  }
+  .par {
+  width: 100% !important;
+}
 }
 
 @media (max-width: 768px) {
@@ -1458,7 +1477,41 @@ section:last-of-type {
 .pargraph {
   font-size: 1rem;
   color: var(--color-primary-dark);
+  margin-bottom: 15px;
 }
-.link_template{
+.link_template {
   margin: 20px 0;
+}
+.f-section {
+  margin-top: 100px;
+}
+
+.section-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.img{
+    border-radius: 15px;
+
+}
+.img img {
+  object-fit: contain;
+  width: 450px;
+  height: 280px;
+}
+.par  {
+  width: 60%;
+  color:var(--color-primary-dark);
+  
+}
+.par{
+  line-height:30px ;
+}
+.par-internal-commit{
+  color: var(--color-secondary-light);
+  font-weight: 700;
+}
+.arrow{
+  margin-left: 10px;
 }
