@@ -3,21 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="../assets/image/logo.jpeg" />
-    <title>فعاليات وأنشطة القسم</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+    <title>ورش ومحاضرات | المعهد العالي للهندسة والتكنولوجيا</title>
     <link rel="stylesheet" href="../assets/CSS/style.css" />
-    <link rel="stylesheet" href="../assets/CSS/sectionsStyle/activity.css" />
+    <link rel="stylesheet" href="../assets/CSS/sectionsStyle/lecture.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Tajawal:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-
   <body>
     <!-- Header -->
     <header class="header">
@@ -509,152 +506,80 @@
     </nav>
     <!-- end header -->
 
-    <!--  HERO BANNER  -->
-    <section class="page-hero" id="top">
-      <div class="geo-pattern"></div>
-      <div class="container hero-content" data-aos="fade-up">
-        <h1 class="hero-title">فعاليات وأنشطة <span>القسم</span></h1>
-        <p class="hero-subtitle">
-          الفعاليات والأنشطة الأكاديمية والعلمية التي ينظمها القسم من ورش عمل
-          ومؤتمرات ومحاضرات ودورات تدريبية متخصصة
-        </p>
-      </div>
-      <div class="hero-wave">
-        <svg
-          viewBox="0 0 1440 60"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M0 60L60 50C120 40 240 20 360 15C480 10 600 20 720 25C840 30 960 30 1080 22.5C1200 15 1320 0 1380 0L1440 0V60H1380C1320 60 1200 60 1080 60C960 60 840 60 720 60C600 60 480 60 360 60C240 60 120 60 60 60H0Z"
-            fill="#f4f6fb"
-          />
-        </svg>
+    <section class="page-hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <i class="fas fa-chalkboard-teacher"></i>
+            قسم هندسة الاتصالات والإلكترونيات
+          </div>
+          <h1 class="hero-title"> ورش عمل</h1>
+          <p class="hero-subtitle">
+            ورش عمل تخصصية تجمع خبراء الصناعة وأكاديميين دوليين مع طلاب وأعضاء
+            هيئة التدريس
+          </p>
+        </div>
       </div>
     </section>
 
-    <main class="container">
-      <section class="activities-section">
-        <div class="activities-grid">
-          <!-- Card 1: ورش عمل -->
-          <div class="activity-card" data-aos="fade-up" data-aos-delay="0">
-            <div class="card-visual">
-              <div class="card-icon-wrap">
-                <i class="fas fa-tools"></i>
-              </div>
-              <div class="card-visual-text">
-                <div class="card-visual-title">ورش العمل</div>
-              </div>
-              <div class="card-bg-num">01</div>
-            </div>
-            <div class="card-body">
-              <div class="card-meta"></div>
-              <p class="card-description">
-                ورش عمل متخصصة تجمع الطلاب والأساتذة في بيئة تفاعلية عملية،
-                تُركّز على تطوير المهارات التقنية والبحثية من خلال تطبيقات
-                واقعية ومشاريع تعاونية.
-              </p>
-              <a
-                href="../sections/electonicWorkshop.html"
-                class="card-cta"
+    <main class="page-main">
+      <!-- ورشة عمل أنظمة الاتصالات  -->
+      <article class="lecture-card reveal">
+        <div class="lecture-card-header">
+          <div class="card-header-content">
+            <span class="card-tag"><i class="fas fa-tools"></i> ورشة عمل</span>
+            <h2 class="card-title">
+              الاتجاهات الحديثة والتحديات في أنظمة الاتصالات المتحركة
+            </h2>
+            <div class="card-meta">
+              <span class="meta-item"
+                ><i class="fas fa-calendar-alt"></i> 28 نوفمبر 2022</span
               >
-                <i class="fas fa-arrow-left"></i>
-                استعرض الورش
-              </a>
-            </div>
-          </div>
-
-          <!-- Card 2: مؤتمرات / ندوات -->
-          <div
-            class="activity-card card-v2"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
-            <div class="card-visual">
-              <div class="card-icon-wrap">
-                <i class="fas fa-microscope"></i>
-              </div>
-              <div class="card-visual-text">
-                <div class="card-visual-title">مؤتمرات وندوات</div>
-              </div>
-              <div class="card-bg-num">02</div>
-            </div>
-            <div class="card-body">
-              <div class="card-meta"></div>
-              <p class="card-description">
-                مؤتمرات وندوات علمية تجمع نخبة من الباحثين والأكاديميين لتبادل
-                أحدث الأبحاث والدراسات، وتُتيح فرصاً للنشر وبناء شبكة علاقات
-                أكاديمية واسعة.
-              </p>
-              <a href="../sections/electronicLecture.html" class="card-cta">
-                <i class="fas fa-arrow-left"></i>
-                استعرض المؤتمرات
-              </a>
-            </div>
-          </div>
-
-          <!-- Card 3: محاضرات -->
-          <div
-            class="activity-card card-v3"
-            data-aos="fade-up"
-            data-aos-delay="150"
-          >
-            <div class="card-visual">
-              <div class="card-icon-wrap">
-                <i class="fas fa-building"></i>
-              </div>
-              <div class="card-visual-text">
-                <div class="card-visual-title">المحاضرات</div>
-              </div>
-              <div class="card-bg-num">03</div>
-            </div>
-            <div class="card-body">
-              <div class="card-meta"></div>
-              <p class="card-description">
-                محاضرات تخصصية يُلقيها خبراء ومتخصصون من داخل المعهد وخارجه،
-                تُغطي أحدث المستجدات في مجالات الهندسة والتكنولوجيا وتُثري
-                المحتوى الأكاديمي للطلاب.
-              </p>
-              <a
-                href="../sections/meetingengineeringMadany.html"
-                class="card-cta"
+              <span class="meta-item"
+                ><i class="fas fa-user-tie"></i> أ.د. هشام علي</span
               >
-                <i class="fas fa-arrow-left"></i>
-                استعرض المحاضرات
-              </a>
-            </div>
-          </div>
-
-          <!-- Card 4: دورات تدريبية -->
-          <div
-            class="activity-card card-v4"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            <div class="card-visual">
-              <div class="card-icon-wrap">
-                <i class="fas fa-signal"></i>
-              </div>
-              <div class="card-visual-text">
-                <div class="card-visual-title">دورات تدريبية</div>
-              </div>
-              <div class="card-bg-num">04</div>
-            </div>
-            <div class="card-body">
-              <div class="card-meta"></div>
-              <p class="card-description">
-                دورات تدريبية مكثفة ومعتمدة تُعدّ الطلاب لسوق العمل من خلال
-                اكتساب مهارات تقنية وعملية متخصصة، بالتعاون مع شركات ومؤسسات
-                صناعية رائدة.
-              </p>
-              <a href="meetingChemical.html" class="card-cta">
-                <i class="fas fa-arrow-left"></i>
-                استعرض الدورات
-              </a>
+              <span class="meta-item"
+                ><i class="fas fa-award"></i> خبير تدريب دولي</span
+              >
             </div>
           </div>
         </div>
-      </section>
+        <div class="lecture-card-body">
+          <p class="lecture-description">
+            الاتجاهات الحديثة والتحديات في أنظمة الأتصالات المتحركة 28 نوفمبر
+            2022 .المحاضر (ا. د هشام على) خبير التدريب الدولى و نائب رئيس
+            الاتحاد العربى للتدريب التابع لمجلس الوحدة الاقتصادية – جامعة الدول
+            العربية فى مجال تنمية القطاع الهنسى - يساهم الدكتور على فى تطوير
+            قطاع التدريب بتصميم برامج تدريبية تتوافق مع سوق العمل ولا تعتمد على
+            المصنعيين- الدكتور هشام لديه خبرة اكثر من 27 عاما فى الصناعة فى اكثر
+            من 35 دولة فى قطاع الاتصالات و الالكترونيات و تكنولوجيا المعلومات -
+            أشرف الدكتور هشام على العديد من الابحاث و الرسائل البحثية فى عدة دول
+            و له أكثر من 10 أبحاث دواية وكتاب فى معالجة الاشارات - يركز الدكتور
+            هشام مؤخرا على تحسين شبكات الاتصالات حيث شغل منصب المدير الهندسي
+            لمشغلي الاتصالات المختلفة فى عدة دول مع التدريب العملي على التصميم
+            والتخطيط- الدكتور هشام مؤسس لمجلة 30 يوم تكنولوجيا فى لندن و مؤسس
+            لشركة التر للحلول التكنولوجية فى الامارات.
+          </p>
+          <div class="lecture-gallery cols-2">
+            <div class="gallery-thumb reveal reveal-delay-1">
+              <img
+                src="../assets/image/ورش عمل.jpg"
+                alt="ورشة الاتصالات 1"
+                loading="lazy"
+              />
+              <div class="gallery-thumb-overlay"></div>
+            </div>
+            <div class="gallery-thumb reveal reveal-delay-2">
+              <img
+                src="../assets/image/ورش عمل.jpg"
+                alt="ورشة الاتصالات 2"
+                loading="lazy"
+              />
+              <div class="gallery-thumb-overlay"></div>
+            </div>
+          </div>
+        </div>
+      </article>
     </main>
 
     <!-- Footer -->
@@ -790,9 +715,7 @@
         <i class="fas fa-arrow-up"></i>
       </a>
     </footer>
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="../assets/javaScript/main.js"></script>
-    <script src="../assets/javaScript/activity.js"></script>
+    <script src="../assets/javaScript/lecture.js"></script>
   </body>
 </html>
