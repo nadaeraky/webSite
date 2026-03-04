@@ -373,7 +373,9 @@ p {
   margin-bottom: 0.5rem;
   font-weight: 800;
   position: relative;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .section-title::after {

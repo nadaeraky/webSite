@@ -364,7 +364,7 @@ section {
 
 /******************************************************************************** */
 
-main {
+/* main {
   padding: var(--spacing-md);
   max-width: 1400px;
   margin: 0 auto;
@@ -388,7 +388,6 @@ main {
   color: var(--color-primary-dark);
 }
 
-/* gallery-grid defined above */
 
 .grid-item {
   background-color: var(--color-white);
@@ -519,4 +518,4 @@ main {
   .gallery-grid {
     grid-template-columns: 1fr;
   }
-}
+} */
