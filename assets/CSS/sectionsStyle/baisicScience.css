@@ -227,8 +227,6 @@ html {
 }
 
 body {
-  font-family: "Cairo", sans-serif;
-  background: var(--light);
   direction: rtl;
   line-height: 1.8;
 }
@@ -305,16 +303,7 @@ body {
   position: relative;
   overflow: hidden;
 }
-.spec-card::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 4px;
-  height: 100%;
-  background: linear-gradient(180deg, var(--blue), var(--accent));
-  border-radius: 0 16px 16px 0;
-}
+
 .spec-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 16px 40px rgba(26, 74, 138, 0.12);
@@ -336,7 +325,7 @@ body {
 }
 
 .spec-card h4 {
-  font-size: 0.95rem;
+  font-size: 1.2rem;
   font-weight: 800;
   color: var(--navy);
   margin-bottom: 8px;
@@ -349,8 +338,6 @@ body {
 }
 
 .overview-callout {
-  display: flex;
-  align-items: flex-start;
   gap: 16px;
   background: linear-gradient(135deg, #eef4ff, #f7f0e4);
   border: 1px solid rgba(26, 74, 138, 0.15);
@@ -364,7 +351,7 @@ body {
   margin-top: 2px;
 }
 .overview-callout p {
-  font-size: 0.96rem;
+  font-size: 0.9rem;
   font-weight: 700;
   color: var(--navy);
 }
@@ -599,6 +586,23 @@ body {
   color: #8a6a1a;
 }
 
+.goal-item:nth-child(8) .goal-bullet {
+  background: #fffaee;
+  color: #8a6a1a;
+}
+.goal-item:nth-child(9) .goal-bullet {
+  background: #fffaee;
+  color: brown;
+}
+.goal-item:nth-child(10) .goal-bullet {
+  background: #fffaee;
+  color: coral;
+}
+.goal-item:nth-child(11) .goal-bullet {
+  background: #fffaee;
+  color: blueviolet;
+}
+
 .goal-item p {
   font-size: 0.95rem;
   color: var(--text);
@@ -682,13 +686,13 @@ body {
   align-items: center;
   gap: 10px;
   color: var(--accent);
-  font-size: 0.85rem;
+  font-size: 2rem;
   font-weight: 700;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  margin-bottom: 14px;
+  margin-bottom: 10px;
 }
-
+/* 
 .foot-page-header .eyebrow::before,
 .foot-page-header .eyebrow::after {
   content: "";
@@ -696,7 +700,7 @@ body {
   height: 2px;
   background: var(--accent);
   border-radius: 2px;
-}
+} */
 
 .foot-page-header h2 {
   color: var(--white);
