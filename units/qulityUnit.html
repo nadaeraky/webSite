@@ -28,6 +28,24 @@
     <title>وحدة ضمان الجودة</title>
   </head>
   <body>
+    <!-- Popup Modal -->
+    <div id="certificatePopup" class="popup-overlay">
+      <div class="popup-content">
+        <button class="popup-close" onclick="closePopup()">&times;</button>
+        <div class="popup-body">
+          <h2 class="popup-title">
+            الأعتماد المؤسسي من الهيئة القومية لضمان جودة التعليم والاعتماد
+          </h2>
+          <div class="popup-image">
+            <img
+              src="../assets/image/شهادة الأعتماد.jpeg"
+              alt="شهادة الاعتماد"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Header -->
     <header class="header">
       <div class="header-top">
@@ -810,6 +828,7 @@
         <i class="fas fa-arrow-up"></i>
       </a>
     </footer>
+    <script src="../assets/javaScript/popUp.js"></script>
 
     <script src="../assets/javaScript/main.js"></script>
     <script src="../assets/javaScript/listOfStatus.js"></script>

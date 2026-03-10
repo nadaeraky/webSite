@@ -1690,3 +1690,7 @@ section:last-of-type {
     grid-template-columns: 1fr;
   }
 }
+.sad-par {
+  font-weight: bold;
+  color: var(--color-primary-dark);
+}
