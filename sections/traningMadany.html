@@ -3,9 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="../assets/image/logo.jpeg" />
     <link rel="stylesheet" href="../assets/CSS/style.css" />
-    <link rel="stylesheet" href="../assets/CSS/units/graduationParty.css" />
+    <link
+      rel="stylesheet"
+      href="../assets/CSS/sectionsStyle/supBasicSience.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -18,7 +20,8 @@
       href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-    <title>التدريب الميداني</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>تدريب ميداني الهندسة المدنية</title>
   </head>
   <body>
     <!-- header -->
@@ -509,100 +512,101 @@
       </ul>
     </nav>
     <!-- end header -->
-    <section class="graduation-gallery">
-      <div class="header-content">
-        <h1>التدريب الميداني لطلاب قسم الهندسة المدنية</h1>
-        <p>
-          بشركة وي بيلد للتطوير العقاري و بهيئة الأبنية التعليمية بدمياط للعام
-          الجامعي 2022-2023
-        </p>
+    <h1 class="main-title">التدريب الميداني</h1>
+    <p class="subtitle">مواقع تدريب طلاب قسم الهندسة المدنية</p>
+
+    <div class="cards-grid">
+      <div class="card">
+        <img
+          src="../assets/image/هيئة الابنية.jpeg"
+          alt="هيئة الأبنية التعليمية"
+        />
+        <div class="card-body">
+          <h2>هيئة الأبنية التعليمية بدمياط</h2>
+          <p>
+            يركز تدريب طلبة الهندسة المدنية في مشروعات هيئة الأبنية التعليمية
+            على معايير إنشائية متخصصة تضمن سلامة المنشآت التعليمية واستدامتها.
+            يتعرف الطلاب خلال التدريب على اشتراطات كود بناء المدارس، بدءاً من
+            الأنظمة الهيكلية المقاومة للأحمال العالية وصولاً إلى توزيع الفراغات
+            المعمارية والإنشائية المناسبة للفصول. كما يتضمن التدريب متابعة أعمال
+            الخرسانات والتشطيبات والملاعب، مع التأكيد على تطبيق معايير جودة
+            التنفيذ لضمان بيئة تعليمية آمنة. يساهم هذا الاحتكاك الميداني في
+            تزويد الطلبة بمهارات إدارة المواقع والإشراف الهندسي الدقيق وفقاً
+            للجداول الزمنية المحددة للمشاريع القومية.
+          </p>
+          <p class="card-location">
+            <i class="fa-solid fa-location-dot"></i> دمياط
+          </p>
+        </div>
       </div>
 
-      <div class="gallery-grid">
-        <div class="gallery-item" data-aos="fade-up" data-aos-duration="1000">
-          <img
-            src="../assets/image/تدريب ميداني مدني1.jpg"
-            alt="تدريب ميداني مدني "
-            class="university-logo"
-          />
-        </div>
-        <div
-          class="gallery-item"
-          data-aos="fade-up"
-          data-aos-delay="200"
-          data-aos-duration="1000"
-        >
-          <img
-            src="../assets/image/تدريب ميداني مدني2.jpg"
-            alt="تدريب ميداني مدني "
-            class="university-logo"
-          />
-        </div>
-        <div
-          class="gallery-item"
-          data-aos="fade-up"
-          data-aos-delay="400"
-          data-aos-duration="1000"
-        >
-          <img
-            src="../assets/image/تدريب ميداني مدني3.jpg"
-            alt="تدريب ميداني مدني "
-            class="university-logo"
-          />
-        </div>
-        <div class="gallery-item" data-aos="zoom-in" data-aos-duration="1000">
-          <img
-            src="../assets/image/تدريب ميداني مدني4.jpg"
-            alt="تدريب ميداني مدني "
-            class="university-logo"
-          />
-        </div>
-        <div
-          class="gallery-item item-large"
-          data-aos="zoom-in"
-          data-aos-delay="200"
-          data-aos-duration="1000"
-        >
-          <img
-            src="../assets/image/تدريب ميداني مدني5.jpg"
-            alt="تدريب ميداني مدني "
-            class="university-logo"
-          />
-        </div>
-        <div
-          class="gallery-item"
-          data-aos="zoom-in"
-          data-aos-delay="400"
-          data-aos-duration="1000"
-        >
-          <img
-            src="../assets/image/تدريب ميداني مدني6.jpg"
-            alt="تدريب ميداني مدني "
-            class="university-logo"
-          />
-        </div>
-        <div
-          class="gallery-item"
-          data-aos="fade-right"
-          data-aos-duration="1000"
-        >
-          <img
-            src="../assets/image/تدريب ميداني مدني7.jpg"
-            alt="تدريب ميداني مدني "
-            class="university-logo"
-          />
-        </div>
-        <div class="gallery-item" data-aos="fade-up" data-aos-duration="1000">
-          <img
-            src="../assets/image/تدريب ميداني مدني8.jpg"
-            alt="تدريب ميداني مدني "
-            class="university-logo"
-          />
+      <div class="card">
+        <img
+          src="../assets/image/اسكان بورسعيد.jpeg"
+          alt="مديرية الإسكان ببورسعيد"
+        />
+        <div class="card-body">
+          <h2>مديرية الإسكان ببورسعيد</h2>
+          <p>
+            يوفر التدريب الميداني لطلبة الهندسة المدنية بمشروعات مديرية إسكان
+            بورسعيد فرصة ذهبية لمعايشة مراحل إنشاء العمارات السكنية على أرض
+            الواقع، بدءاً من أعمال الجسات والأساسات وصولاً إلى التشطيبات
+            النهائية. يكتسب الطلاب مهارات قراءة المخططات الهندسية، ومتابعة
+            استلام البنود الإنشائية، والإشراف على جودة الصب الخرساني تحت إشراف
+            مهندسين متخصصين. كما يساهم التدريب في ربط المناهج الأكاديمية
+            بالمتطلبات الفنية للمواقع، مما يعزز من قدرة الطالب على حل المشكلات
+            التقنية وتفهم معايير السلامة المهنية.
+          </p>
+          <p class="card-location">
+            <i class="fa-solid fa-location-dot"></i> بورسعيد
+          </p>
         </div>
       </div>
-    </section>
-    <!-- end section -->
 
+      <div class="card">
+        <img src="../assets/image/وي بلد.jpeg" alt="شركة وي بيلد" />
+        <div class="card-body">
+          <h2>شركة We Build للتطوير العقاري</h2>
+          <p>
+            يوفر التدريب الميداني لطلبة الهندسة المدنية بشركة "وي بيلد" (We
+            Build) للتطوير العقاري بمدينة دمياط الجديدة فرصة استثنائية للتعامل
+            مع أحدث تقنيات البناء الحديثة في المشروعات السكنية والتجارية
+            المتميزة. يركز التدريب على تمكين الطلاب من متابعة أعمال الهياكل
+            الخرسانية والتشطيبات الفاخرة، مع فهم دقيق لآليات إدارة المواقع
+            وتنفيذ المخططات الهندسية بدقة متناهية. كما يتيح التواجد في مدينة
+            دمياط الجديدة للطلاب معاينة تحديات التربة الساحلية وكيفية اختيار
+            الأساسات المناسبة لها وفقاً للمواصفات الفنية. يساهم هذا الاحتكاك
+            المباشر في صقل المهارات القيادية للطلبة وتعزيز قدرتهم على الإشراف
+            الميداني وضمان جودة التنفيذ في سوق العقارات المتطور.
+          </p>
+          <p class="card-location">
+            <i class="fa-solid fa-location-dot"></i> دمياط الجديدة
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../assets/image/زاد.jpeg" alt="شركة زاد" />
+        <div class="card-body">
+          <h2>شركة زاد للتطوير العقاري</h2>
+          <p>
+            يمنح التدريب في شركة "زاد" للتطوير العقاري بمدينة دمياط الجديدة طلبة
+            الهندسة المدنية خبرة عملية في التعامل مع معايير الجودة العالمية
+            وتطبيقات الاستدامة في المشروعات العمرانية. يتعمق الطلاب خلال فترة
+            التدريب في دراسة أساليب التنفيذ المتقدمة للهياكل الخرسانية وأعمال
+            العزل والتشطيبات الحديثة المستخدمة في المجمعات السكنية. كما يكتسب
+            المتدربون مهارات التخطيط والجدولة الزمنية للمواقع، مع الاحتكاك
+            المباشر بفرق العمل الهندسية في إدارة التوريدات والمواد الإنشائية.
+            هذا التدريب يثري المعرفة التقنية للطلاب حول التعامل مع التربة في
+            بيئة دمياط الجديدة، مما يؤهلهم بجدارة للمنافسة في سوق العمل بعد
+            التخرج.
+          </p>
+          <p class="card-location">
+            <i class="fa-solid fa-location-dot"></i> دمياط الجديدة
+          </p>
+        </div>
+      </div>
+    </div>
     <!-- Footer -->
     <footer class="footer">
       <div class="container">
@@ -737,15 +741,6 @@
         <i class="fas fa-arrow-up"></i>
       </a>
     </footer>
-    <!-- script -->
-    <script src="../assets/javaScript/unit.js"></script>
     <script src="../assets/javaScript/main.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        once: false,
-        mirror: true,
-      });
-    </script>
   </body>
 </html>
