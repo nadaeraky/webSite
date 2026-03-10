@@ -1295,6 +1295,96 @@ section:last-of-type {
     font-size: 0.95rem;
   }
 }
+.projects-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.8rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.project-photo-card {
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.09);
+  transition:
+    transform 0.35s cubic-bezier(0.22, 0.68, 0, 1.2),
+    box-shadow 0.35s ease;
+  cursor: pointer;
+}
+
+.project-photo-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.16);
+}
+
+.project-photo-wrap {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 4/3;
+}
+
+.project-photo-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.project-photo-card:hover .project-photo-wrap img {
+  transform: scale(1.07);
+}
+
+
+.project-photo-info {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.85rem 1rem;
+  background: #fff;
+  border-top: 3px solid var(--color-secondary, #c9a84c);
+}
+
+.project-photo-number {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #fff;
+  background: var(--color-primary, #1a3c5e);
+  border-radius: 6px;
+  padding: 0.2rem 0.5rem;
+  letter-spacing: 0.5px;
+  flex-shrink: 0;
+}
+
+.project-photo-name {
+  font-family: "Cairo", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--color-primary-dark, #0f2740);
+  margin: 0;
+  line-height: 1.4;
+  text-align: right;
+}
+
+
+@media (max-width: 768px) {
+  .projects-gallery-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.2rem;
+  }
+  .project-photo-name {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-gallery-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.9rem;
+  }
+}
 /* *************************أنشطة القسم ***************************************************/
 .activity-section {
   background-color: var(--color-white);
