@@ -38,7 +38,7 @@
 .system-of-study h1,
 .exam-management h1 {
   color: var(--color-primary-dark, #0b2545);
-  margin-bottom: 20px;
+  margin-bottom: 33px;
   font-size: clamp(1.6rem, 3.5vw, 2.2rem);
   padding-bottom: 5px;
   border-bottom: 2px dashed #eee;
@@ -192,4 +192,8 @@
   .list-of-section li::before {
     font-size: 0.7rem;
   }
+}
+.main-title{
+  text-align: center;
+  margin-bottom: 15px;
 }
