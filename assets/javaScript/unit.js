@@ -1,65 +1,75 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const observerOptions = {
-        root: null, 
-        rootMargin: '0px',
-        threshold: 0.1 
-    };
+//   ANIMATIONS 
+document.addEventListener("DOMContentLoaded", () => {
+  const observer1 = new IntersectionObserver(
+    (entries, obs) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("scrolled");
+          obs.unobserve(entry.target);
+        }
+      });
+    },
+    { root: null, rootMargin: "0px", threshold: 0.1 },
+  );
 
-    const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('scrolled');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, observerOptions);
+  document
+    .querySelectorAll(".animate-on-scroll")
+    .forEach((el) => observer1.observe(el));
 
-    const animatedElements = document.querySelectorAll('.animate-on-scroll');
-    animatedElements.forEach(element => {
-        observer.observe(element);
+  const observer2 = new IntersectionObserver(
+    (entries, obs) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          obs.unobserve(entry.target);
+        }
+      });
+    },
+    { rootMargin: "0px", threshold: 0.1 },
+  );
+
+  document
+    .querySelectorAll('[data-animate="fade-in"], [data-animate="fade-in-list"]')
+    .forEach((el) => observer2.observe(el));
+
+  // الخريجين المتميزين 
+  const observer3 = new IntersectionObserver(
+    (entries, obs) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("appear");
+          obs.unobserve(entry.target);
+        }
+      });
+    },
+    { root: null, rootMargin: "0px", threshold: 0.2 },
+  );
+
+  document.querySelectorAll(".fade-in").forEach((el) => observer3.observe(el));
+
+  // ===== POPUP =====
+  const popup = document.getElementById("certificatePopup");
+  if (popup) {
+    setTimeout(() => {
+      popup.classList.add("active");
+    }, 300);
+
+    popup.addEventListener("click", function (e) {
+      if (e.target === this) closePopup();
     });
+  }
 });
 
-// صفحة ملتقي الخريجين
-    document.addEventListener('DOMContentLoaded', () => {
-        const elements = document.querySelectorAll('[data-animate="fade-in"], [data-animate="fade-in-list"]');
+function closePopup() {
+  const popup = document.getElementById("certificatePopup");
+  if (!popup) return;
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, {
-            rootMargin: '0px',
-            threshold: 0.1         });
+  popup.style.opacity = "0";
+  popup.style.transition = "opacity 0.3s ease";
 
-        elements.forEach(element => {
-            observer.observe(element);
-        });
-    });
-
-// الخريجين المتميزين
-document.addEventListener('DOMContentLoaded', () => {
-    const sections = document.querySelectorAll('.fade-in');
-
-    const observerOptions = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.2 
-    };
-
-    const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('appear');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, observerOptions);
-
-    sections.forEach(section => {
-        observer.observe(section);
-    });
-});
+  setTimeout(() => {
+    popup.classList.remove("active");
+    popup.style.opacity = "";
+    popup.style.transition = "";
+  }, 300);
+}
