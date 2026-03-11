@@ -1265,7 +1265,9 @@
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 992px) {
+
   .content-wrapper {
+    
     flex-direction: column;
     gap: 20px;
   }
@@ -1282,6 +1284,16 @@
 }
 
 @media (max-width: 768px) {
+  .popup-title{
+    font-size: 17px;
+  }
+  .popup-close{
+    width: 26px;
+    height: 26px;
+  }
+  .list-study li a {
+    font-size: 13px;
+  }
   .unit-header {
     padding: 40px 20px;
   }
