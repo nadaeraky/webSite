@@ -27,7 +27,6 @@
   padding: 0;
 }
 
-
 /* *********************************statistic page****************************************** */
 .organizational-section {
   padding: 30px;
@@ -158,6 +157,7 @@
 }
 
 .unit-header {
+  background-color: var(--color-primary-dark);
   text-align: center;
   margin-bottom: 60px;
   padding: 30px 20px;
@@ -1084,7 +1084,4 @@
   transform: translateX(0);
 }
 @media (max-width: 768px) {
- 
-
- 
 }
