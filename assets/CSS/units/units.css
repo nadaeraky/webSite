@@ -1189,7 +1189,6 @@
   border-radius: var(--border-radius-sm);
 }
 
-/* ===== DATA-ANIMATE ===== */
 [data-animate="fade-in"] {
   opacity: 0;
   transform: translateY(35px);
