@@ -516,3 +516,132 @@ body {
     padding: 60px 16px;
   }
 }
+
+/* ===== INTRO SECTION ===== */
+.intro-section {
+  background: var(--white);
+}
+.intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+.intro-visual {
+  position: relative;
+}
+.intro-icon-big {
+  width: 100%;
+  max-width: 340px;
+  margin: 0 auto;
+  aspect-ratio: 1;
+  background: linear-gradient(
+    135deg,
+    var(--primary-dark),
+    var(--primary),
+    var(--primary-light)
+  );
+  border-radius: var(--r-2xl);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--sh-xl);
+}
+.intro-icon-big::before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.06);
+  top: -60px;
+  left: -60px;
+}
+.intro-icon-big i {
+  font-size: 6rem;
+  color: rgba(255, 255, 255, 0.9);
+  position: relative;
+  z-index: 1;
+}
+.intro-float-badge {
+  position: absolute;
+  background: var(--white);
+  border-radius: var(--r-xl);
+  padding: 0.6rem 0.9rem;
+  box-shadow: var(--sh-lg);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--primary-dark);
+  animation: floatBadge 3s ease-in-out infinite;
+}
+@keyframes floatBadge {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+.intro-float-badge i {
+  color: var(--secondary);
+  font-size: 0.9rem;
+}
+.badge-1 {
+  bottom: -90px;
+  right: -10px;
+  animation-delay: 0s;
+}
+.badge-2 {
+  top: -30px;
+  left: -10px;
+  animation-delay: 1.5s;
+}
+
+.intro-content .intro-lead {
+  font-size: 1.05rem;
+  color: var(--primary-dark);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+.intro-content p {
+  font-size: 0.9rem;
+  color: var(--text-mid);
+  line-height: 1.9;
+  margin-bottom: 1rem;
+}
+.intro-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+.intro-feature {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.7rem 0.9rem;
+  background: var(--gray-100);
+  border-radius: var(--r-lg);
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--primary-dark);
+  transition: all var(--tr);
+}
+.intro-feature:hover {
+  background: rgba(26, 35, 126, 0.08);
+  transform: translateX(-3px);
+}
+.intro-feature i {
+  color: var(--primary-light);
+  font-size: 0.9rem;
+}
+.section-pad {
+  padding: 5rem 0;
+}
